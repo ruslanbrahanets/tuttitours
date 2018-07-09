@@ -1,5 +1,6 @@
 @import "_mixins/font-face";
 
-@include font-face("GilroyRegular", "../fonts/GilroyRegular/RadomirTinkov-Gilroy-Regular");
-@include font-face("GilroyBold", "../fonts/GilroyBold/RadomirTinkov-Gilroy-Bold", bold);
-@include font-face("GilroyExtraBold", "../fonts/GilroyExtraBold/RadomirTinkov-Gilroy-ExtraBold");
+@include font-face("PNLightItalic", "../fonts/ProximaNovaLightItalic/ProximaNovaLightIt");
+@include font-face("PNRegular", "../fonts/ProximaNovaRegular/ProximaNovaRegular");
+@include font-face("PNSemiBold", "../fonts/ProximaNovaSemiBold/ProximaNovaSemibold");
+@include font-face("PNBold", "../fonts/ProximaNovaBold/ProximaNovaBold", bold);
