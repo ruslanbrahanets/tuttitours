@@ -1,6 +1,6 @@
 $(function() {
 	function heightDetect() {
-		$(".tutti-top").css("height", $(window).height());
+		$(".top").css("height", $(window).height());
 	}
 	heightDetect();
 			$(window).resize(function() {

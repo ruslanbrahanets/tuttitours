@@ -45,6 +45,16 @@ $font-size-header: 20px;
 $car-color: $border-color;
 $spin-deg: 36deg;
 
+
+header {
+	.top {
+		background-image: url(../img/min/bg_top.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
 .tutti {
 	h1 {
 		font-family: "PNBold";
@@ -57,12 +67,6 @@ $spin-deg: 36deg;
 		color: #4c4c4c;
 		line-height: 1.4;
 		letter-spacing: 0.02em;
-	}
-	&-top {
-		background-image: url(../img/min/bg_top.jpg);
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
 	}
 	&-about {
 		&-img {
