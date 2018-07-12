@@ -99,14 +99,92 @@ header {
 		&-card {
 			position: relative;
 			width: 100%;
-			min-height: 410px;
+			height: 400px;
 			background-color: #fff;
 			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
 			border-radius: 10px;
 			margin-bottom: 30px;
 			&-above {
 				position: relative;
-				min-height: 280px;
+				height: 280px;
+				overflow: hidden;
+				border-radius: 10px;
+				&-sale {
+					position: absolute;
+    			background: linear-gradient(135deg, #14C8A3 18.32%, rgba(20, 200, 163, 0) 150%);
+    			width: 220px;
+    			height: 220px;
+					border-radius: 100%;
+					top: -15%;
+    			left: -5%;
+					.sale-text {
+						position: relative;
+    				width: 100%;
+						height: 100%;
+						&-content {
+							display:inline-block;
+							vertical-align:middle;
+							position: absolute;
+							display: inline-block;
+							vertical-align: middle;
+							top: 53%;
+    					left: 2%;
+							transform: translateY(-50%);
+							width: 100%;
+							text-align: center;
+							&-above {
+								&-up, &-down {
+									display:inline-block;
+  								vertical-align:middle;
+								}
+								.digit {
+									font-family: "PNExtraBold";
+									font-size: 72px;
+									color: #fff;
+									line-height: 0.9;
+								}
+								.percent {
+									text-align:center;
+								}
+								.percent div:last-child {
+									text-align:center;
+									font-family: "PNExtraBold";
+									font-size: 14px;
+									color: #fff;
+									line-height: 1;
+									text-transform: uppercase;
+								}
+								.percent div:first-child {
+									text-align:center;
+									font-family: "PNExtraBold";
+									font-size: 36px;
+									color: #fff;
+									line-height: 1;
+									transform: translateY(-5px);
+								}
+							}
+							&-below {
+								text-align: center;
+								font-family: "PNExtraBold";
+								font-size: 48px;
+								color: #fff;
+								line-height: 0.8;
+								text-transform: uppercase;
+							}
+						}
+					}
+				}
+				&-fav {
+					position: absolute;
+					height: 50px;
+					width: 50px;
+					top: 5%;
+					right: 3%;
+					svg {
+						height: 50px;
+						width: auto;
+					}
+				}
 				img {
 					max-width: 100%;
 					max-height: auto;
@@ -116,7 +194,42 @@ header {
 				}
 			}
 			&-below {
-
+				padding: 25px;
+				h3 {
+					font-family: "PNSemiBold";
+					font-size: 18px;
+					color: #222222;
+					line-height: 1;
+				}
+				p {
+					font-family: "PNRegular";
+					font-size: 14px;
+					color: #4c4c4c;
+					line-height: 1.4;
+					letter-spacing: 0;
+				}
+				.price-be {
+					font-family: "PNRegular";
+					font-size: 14px;
+					color: #4c4c4c;
+				}
+				.price-af {
+					font-family: "PNRegular";
+					font-size: 24px;
+					color: #222222;
+				}
+				&-right, &-left {
+					display: inline-block;
+				}
+				&-left {
+					float: left;
+				}
+				&-right {
+					float: right;
+					&-info {
+						display: inline-block;
+					}
+				}
 			}
 		}
 	}
