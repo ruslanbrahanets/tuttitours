@@ -104,6 +104,27 @@ header {
 			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
 			border-radius: 10px;
 			margin-bottom: 30px;
+			transition: all .2s ease-in-out 0s;
+			cursor: pointer;
+			&:hover {
+				transform: translateY(-.3em);
+    		-webkit-box-shadow: 0 0.4em 2.4em 0 rgba(0,0,0,.2);
+    		-moz-box-shadow: 0 .4em 2.4em 0 rgba(0,0,0,.2);
+				box-shadow: 0 0.4em 2.4em 0 rgba(0,0,0,.2);
+				transition: all .2s ease-in-out 0s;
+				.tutti-hot-card-above-sale {
+					will-change: transform;
+					transition: all 0.3s ease-in-out;
+					width: 300px;
+					height: 300px;
+					top: -25%;
+    			left: -10%;
+					.sale-text {
+						will-change: transform;
+						transition: all 0.3s ease-in-out;
+					}
+				}
+			}
 			&-above {
 				position: relative;
 				height: 280px;
@@ -116,8 +137,10 @@ header {
     			height: 220px;
 					border-radius: 100%;
 					top: -15%;
-    			left: -5%;
+					left: -5%;
+					transition: all 0.3s ease-in-out;
 					.sale-text {
+						transition: all 0.3s ease-in-out;
 						position: relative;
     				width: 100%;
 						height: 100%;
@@ -183,11 +206,19 @@ header {
 					svg {
 						height: 50px;
 						width: auto;
+						transition: all 0.3s ease-in-out;
+						&:hover {
+							transition: all 0.3s ease-in-out;
+							cursor: url('../img/min/add.png'), auto;
+							transform: scale(1.1)
+						}
 					}
 				}
 				img {
-					max-width: 100%;
-					max-height: auto;
+					width: 100%;
+    			height: 280px;
+    			object-fit: cover;
+    			object-position: 0% 0%;
 					object-fit: cover;
 					border-radius: 10px;
 					box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -212,17 +243,33 @@ header {
 					font-family: "PNRegular";
 					font-size: 14px;
 					color: #4c4c4c;
+					line-height: 1.4;
 				}
 				.price-af {
-					font-family: "PNRegular";
+					font-family: "PNBold";
 					font-size: 24px;
 					color: #222222;
+					line-height: 1;
+					svg {
+						height: 17px;
+						width: auto;
+					}
+					span.minimaze {
+						font-size: 18px;
+					}
+					span.colorize {
+						color: #14C8A3;
+					}
+				}
+				.tm {
+					font-family: "PNRegular";
 				}
 				&-right, &-left {
 					display: inline-block;
 				}
 				&-left {
 					float: left;
+					width: 60%;
 				}
 				&-right {
 					float: right;
@@ -230,6 +277,22 @@ header {
 						display: inline-block;
 					}
 				}
+				.leftprs {
+					margin-right: 15px;
+				}
+			}
+		}
+		&-btn {
+			width: 240px;
+			height: 60px;
+			a {
+				font-family: PNBold;
+				font-size: 20px;
+				color: #fff;
+				line-height: 1;
+				background-color: #14C8A3;
+				border-radius: 10px;
+				padding: 20px 40px;
 			}
 		}
 	}
@@ -270,4 +333,4 @@ header {
 }
 
 
-@import "media"; 
+@import "media";
