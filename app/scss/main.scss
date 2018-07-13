@@ -64,9 +64,15 @@ header {
 		line-height: 1.4;
 		letter-spacing: 0.02em;
 	}
+	.tittle-h2 {
+		font-family: "PNBold";
+		font-size: 36px;
+		color: #222222;
+		line-height: 1;
+	}
 	&-about, &-hot, &-bn1, &-simple {
 		padding: 100px 0 50px;
-		h2 {
+		.tittle-h2 {
 			padding-bottom: 60px;
 		}
 	}
