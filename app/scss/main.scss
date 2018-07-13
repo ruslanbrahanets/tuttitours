@@ -51,7 +51,7 @@ header {
 }
 
 .tutti {
-	h1 {
+	h2 {
 		font-family: "PNBold";
 		font-size: 36px;
 		color: #222222;
@@ -72,13 +72,13 @@ header {
 	}
 	&-about, &-hot, &-bn1, &-simple {
 		padding: 100px 0 50px;
-		h1 {
+		h2 {
 			padding-bottom: 60px;
 		}
 	}
 	&-hot, &-simple {
 		padding: 50px 0;
-		h1 {
+		h2 {
 			padding-bottom: 60px;
 		}
 	}
@@ -250,7 +250,7 @@ header {
 			}
 			&-below {
 				padding: 25px;
-				h3 {
+				h4 {
 					font-family: "PNSemiBold";
 					font-size: 18px;
 					color: #222222;
