@@ -500,6 +500,7 @@ header {
 			/* Нижняя часть карточки */
 			&-below {
 				padding: 25px;
+				height: 180px;
 				h4 {
 					font-family: "PNSemiBold";
 					font-size: 18px;
@@ -512,13 +513,13 @@ header {
 					color: #4c4c4c;
 					line-height: 1.4;
 					letter-spacing: 0;
-					margin-bottom: 20px;
+					margin-bottom: 0px;
 				}
 				.price-be {
 					font-family: "PNRegular";
 					font-size: 14px;
 					color: #4c4c4c;
-					line-height: 1.4;
+					line-height: 1;
 				}
 				.price-af {
 					font-family: "PNBold";
@@ -544,6 +545,7 @@ header {
 				}
 				&-left {
 					width: auto;
+					min-height: 80px;
 				}
 				&-right {
 					&-info {
