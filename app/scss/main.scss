@@ -2,13 +2,14 @@
 @import "fonts";
 @import "libs";
 
+
 ::placeholder {
 	color: #666;
 }
 
 ::selection {
 	background-color: $accent;
-	color: #fff;
+	color: $white;
 }
 
 html, body {
@@ -70,7 +71,7 @@ header {
 		color: #222222;
 		line-height: 1;
 	}
-	&-about, &-hot, &-bn1, &-simple {
+	&-about, &-hot, &-simple {
 		padding: 100px 0 50px;
 		.tittle-h2 {
 			padding-bottom: 60px;
@@ -111,7 +112,7 @@ header {
 			text-align: center;
 			margin-top: 20px;
 			&-a {
-				background-color: #14c8a3;
+				background-color: $green;
 				border-radius: 10px;
 				padding: 0 40px;
 				width: 240px;
@@ -123,7 +124,7 @@ header {
 			a {
 				font-family: PNBold;
 				font-size: 20px;
-				color: #fff;
+				color: $white;
 				transition: all .2s ease-in-out 0s;
 				&:hover {
 					background-color: #19E8BE;
@@ -137,7 +138,7 @@ header {
 			position: relative;
 			width: 100%;
 			height: 400px;
-			background-color: #fff;
+			background-color: $white;
 			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
 			border-radius: 10px;
 			margin-bottom: 30px;
@@ -170,7 +171,7 @@ header {
 				/* Шар со скидкой */
 				&-sale {
 					position: absolute;
-    			background: linear-gradient(135deg, #14C8A3 18.32%, rgba(20, 200, 163, 0) 150%);
+    			background: linear-gradient(135deg, $green 18.32%, rgba(20, 200, 163, 0) 150%);
     			width: 220px;
     			height: 220px;
 					border-radius: 100%;
@@ -201,7 +202,7 @@ header {
 								.digit {
 									font-family: "PNExtraBold";
 									font-size: 72px;
-									color: #fff;
+									color: $white;
 									line-height: 0.9;
 								}
 								.percent {
@@ -211,7 +212,7 @@ header {
 									text-align:center;
 									font-family: "PNExtraBold";
 									font-size: 14px;
-									color: #fff;
+									color: $white;
 									line-height: 1;
 									text-transform: uppercase;
 								}
@@ -219,7 +220,7 @@ header {
 									text-align:center;
 									font-family: "PNExtraBold";
 									font-size: 36px;
-									color: #fff;
+									color: $white;
 									line-height: 1;
 									transform: translateY(-5px);
 								}
@@ -228,7 +229,7 @@ header {
 								text-align: center;
 								font-family: "PNExtraBold";
 								font-size: 48px;
-								color: #fff;
+								color: $white;
 								line-height: 0.8;
 								text-transform: uppercase;
 							}
@@ -299,7 +300,7 @@ header {
 						font-size: 18px;
 					}
 					span.colorize {
-						color: #14C8A3;
+						color: $green;
 					}
 				}
 				.tm {
@@ -332,8 +333,82 @@ header {
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		&-lefts {
+		&-bg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 550px;
+			padding: 0;
 			background-color: rgba(20, 200, 163, .50);
+		}
+			&-lefts p {
+				margin: 0;
+				font-size: 96px;
+				line-height: 113px;
+				font-family: "PNExtraBold";
+				color: $white;
+			}
+			&-lefts p:nth-child(2) {
+				font-size: 72px;
+				line-height: 84px;
+				font-family: "PNBold";
+			}
+			&-lefts p:nth-child(3) {
+				font-size: 64px;
+				line-height: 75px;
+				font-family: "PNSemiBold";
+			}
+		&-rights {
+			color: $white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 550px;
+			padding: 0;
+			& .tutti-hot-btn {
+				text-align: left;
+				&-a {
+					width: 180px;	
+				}
+			}
+		}
+		.sale25 {
+				color: $white;
+				display: inline-block;
+				margin-right: 40px;
+				font-family: "PNExtrabold";
+				font-size: 144px;
+				line-height: 110px;
+				text-transform: uppercase;
+				&-25 {
+					display: flex;
+					padding-bottom: 15px;
+				}
+				&-pers {
+					padding:  8px 0 0 5px;
+					font-size: 65px;
+					line-height: 55px;
+					
+					& div:last-child {
+						padding-top: 18px;
+						font-size: 24px;
+						line-height: 20px;
+					}
+				}
+				&-sale {
+					font-size: 96px;
+					line-height: 75px;
+				}
+			}
+		&-rights-text {
+			font-size: 32px;
+			line-height: 42px;
+			& p {
+				font-family: PNSemibold;
+				color: $white;
+				font-size: 20px;
+				line-height: 31px;
+			}
 		}
 	}
 	/* Туры */
@@ -344,7 +419,7 @@ header {
 			text-align: center;
 			margin-top: 20px;
 			&-a {
-				background-color: #14c8a3;
+				background-color: $green;
 				border-radius: 10px;
 				padding: 0 40px;
 				width: 240px;
@@ -356,7 +431,7 @@ header {
 			a {
 				font-family: PNBold;
 				font-size: 20px;
-				color: #fff;
+				color: $white;
 				transition: all .2s ease-in-out 0s;
 				&:hover {
 					background-color: #19E8BE;
@@ -370,7 +445,7 @@ header {
 			position: relative;
 			width: 100%;
 			height: 360px;
-			background-color: #fff;
+			background-color: $white;
 			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
 			border-radius: 10px;
 			margin-bottom: 30px;
@@ -403,7 +478,7 @@ header {
 				/* Шар со скидкой */
 				&-sale {
 					position: absolute;
-    			background: linear-gradient(135deg, #14C8A3 18.32%, rgba(20, 200, 163, 0) 150%);
+    			background: linear-gradient(135deg, $green 18.32%, rgba(20, 200, 163, 0) 150%);
     			width: 220px;
     			height: 220px;
 					border-radius: 100%;
@@ -434,7 +509,7 @@ header {
 								.digit {
 									font-family: "PNExtraBold";
 									font-size: 72px;
-									color: #fff;
+									color: $white;
 									line-height: 0.9;
 								}
 								.percent {
@@ -444,7 +519,7 @@ header {
 									text-align:center;
 									font-family: "PNExtraBold";
 									font-size: 14px;
-									color: #fff;
+									color: $white;
 									line-height: 1;
 									text-transform: uppercase;
 								}
@@ -452,7 +527,7 @@ header {
 									text-align:center;
 									font-family: "PNExtraBold";
 									font-size: 36px;
-									color: #fff;
+									color: $white;
 									line-height: 1;
 									transform: translateY(-5px);
 								}
@@ -461,7 +536,7 @@ header {
 								text-align: center;
 								font-family: "PNExtraBold";
 								font-size: 48px;
-								color: #fff;
+								color: $white;
 								line-height: 0.8;
 								text-transform: uppercase;
 							}
@@ -534,7 +609,7 @@ header {
 						font-size: 18px;
 					}
 					span.colorize {
-						color: #14C8A3;
+						color: $green;
 					}
 				}
 				.tm {
