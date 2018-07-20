@@ -46,45 +46,46 @@ $font-size-header: 20px;
 $car-color: $border-color;
 $spin-deg: 36deg;
 
-
-header {
-	.menu {
-		display: flex;
-		justify-content: space-between;
-		position: fixed;
-		z-index: 99;
-		top: 0;
-		width: 100%;
-		align-items: center;
-		font-family: "PNSemibold";
-		font-size: 16px;
-	}
-
-	a {
+/* Меню */
+.menu {
+	position: fixed;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 25px 50px 0;
+	font-family: "PNSemibold";
+	ul, li, a {
 		color: $white;
-	}
-	& ul {
 		padding: 0;
 		margin: 0;
-		li {
-		display: inline;
-		padding: 0 15px;
-			img {
-				width: 100px;
-			}
-		}
-
 	}
-	.icon {
-    background-color: #ffbc40;
-    display: inline-block;
-    border-radius: 50px;
-    padding: 16px 22px;
-    box-sizing: border-box;
-}	
+	li {
+		display: inline-block;
+	}
+	.menu-mid {
+		display: flex;
+		align-items: center;
+		.logo {
+			margin-bottom: -55px;
+			margin-right: 38px;
+		}
+		li {
+			margin-right: 38px;
+			transition: all 0.3s ease;
+			position: relative;
+		}
+		li:hover .bluedot {
+				display: block;
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background: red;
+		}
+	}
 }
-
-
 
 
 .tutti {
