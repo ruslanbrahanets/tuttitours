@@ -76,9 +76,10 @@ $spin-deg: 36deg;
 			transition: all 0.3s ease;
 			position: relative;
 		}
-		li:hover .bluedot {
-				display: block;
+		.bluedot {
+				display: none;
 				position: absolute;
+				top: 30px;
 				left: 50%;
 				transform: translateX(-50%);
 				width: 11px;
@@ -86,6 +87,13 @@ $spin-deg: 36deg;
 				border-radius: 50%;
 				background: $green;
 		}
+		.active {
+				display: block;
+		}
+		li:hover .bluedot {
+			display: block;
+		}
+
 	}
 }
 
