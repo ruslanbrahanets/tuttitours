@@ -79,10 +79,12 @@ $spin-deg: 36deg;
 		li:hover .bluedot {
 				display: block;
 				position: absolute;
-				width: 50px;
-				height: 50px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 11px;
+				height: 11px;
 				border-radius: 50%;
-				background: red;
+				background: $green;
 		}
 	}
 }
