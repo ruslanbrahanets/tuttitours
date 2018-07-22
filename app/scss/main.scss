@@ -801,15 +801,31 @@ footer {
 		font-size: 28px;
 		color: #fff;
 		line-height: 1;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 	}
 	p, li a {
 		font-family: "PNRegular";
-		font-size: 18px;
+		font-size: 16px;
 		color: #fff;
 		line-height: 1.4;
 	}
+	p {
+		margin-left: 10px;
+		margin-bottom: 0;
+	}
 	.tutti-footer {
+		&-ct, &-ph, &-em {
+			display: flex;
+    	flex-direction: row;
+    	justify-content: flex-start;
+			align-items: flex-start;
+			margin-bottom: 20px;
+		}
+		&-ct {
+			p:first-child {
+				margin-left: 0;
+			}
+		}
 		.frline {
 			padding-top: 150px;
 		}
