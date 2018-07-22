@@ -64,6 +64,50 @@ $spin-deg: 36deg;
 	li {
 		display: inline-block;
 	}
+	
+	.menu-left, .menu-right {
+		display: flex;
+		align-items: center;
+		width: auto;
+		.dropdown-menu {
+		display: inline-block;
+		position: relative;
+		min-width: 0;
+  	background: none;
+  	border: none;
+  	margin: 0;
+  	padding: 0;
+		transition: all 1s ease;
+		margin-right: 50px;
+			.flag-eng {margin-right: 10px;}
+  		.down {margin: 0 0 2px 15px;}
+		.dropdown {
+			display: none;
+			position: absolute;
+  		left: 35px;
+  		width: auto;
+  		font-size: 14px;
+  		li a:hover {color: $green;}
+		}
+		}
+		.dropdown-menu:lest-child {
+			margin-right: 0;
+		}
+		.currency {
+			.dropdown-menu {
+			margin-right: 0;
+			}
+			.dropdown{
+			left: 0px;
+			margin-right: 0;
+			}
+		}
+	}
+
+  .dropdown-menu:hover .dropdown {
+  display: block;
+	}
+
 	.menu-mid {
 		display: flex;
 		align-items: center;
@@ -93,9 +137,34 @@ $spin-deg: 36deg;
 		li:hover .bluedot {
 			display: block;
 		}
-
 	}
 }
+
+	.menu-right {
+		#login {
+			margin-right: 48px;
+			&:hover {
+				color: $green;
+			}
+		}
+		.cart {
+			position: relative;
+			svg {
+				
+			}
+			.counter {
+				position: absolute;
+				top: 10px;
+				left: 13px;
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				text-align: center;
+				font-size: 12px;
+				background: $green;
+			}
+		}
+	}
 
 
 .tutti {
