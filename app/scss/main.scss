@@ -884,13 +884,20 @@ footer {
 		.frline {
 			padding-top: 150px;
 		}
+		.secline {
+			padding-top: 40px;
+		}
 		&-mn {
 			ul {
 				list-style: none;
 				padding: 0;
+				li {
+					line-height: 1;
+					margin-bottom: 10px;
+				}
 			}
 		}
-		&-tr {
+		&-tr, &-faq {
 			.wrap ul {
 				list-style-position: inside;
 				list-style-type: decimal;
@@ -898,6 +905,20 @@ footer {
 				column-count: 2;
 				height: 180px;
 				padding: 0;
+			}
+			li {
+				line-height: 1;
+				margin-bottom: 10px;
+			}
+		}
+		&-tr {
+			.wrap ul {
+				height: 180px;
+			}
+		}
+		&-faq {
+			.wrap ul {
+				height: 130px;
 			}
 		}
 	}
