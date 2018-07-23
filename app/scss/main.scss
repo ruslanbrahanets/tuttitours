@@ -222,7 +222,6 @@ $spin-deg: 36deg;
 			}
 			&-search {
 				margin-top: 88px;
-				flex-wrap: wrap;
 				.row {
 					justify-content: center;
 				}
@@ -276,7 +275,7 @@ $spin-deg: 36deg;
 				}
 				&-button {
 					background: #ffcd00;
-					border-radius: 10px;
+					border-radius: 5px;
 					padding: 0 30px;
 					display: inline-block;
 					text-align: center;
