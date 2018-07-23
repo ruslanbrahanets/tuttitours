@@ -293,11 +293,11 @@ $spin-deg: 36deg;
 						margin-top: 18px;
 					}
 				}
-			.search-example {
-				width: 300px !important;
-				text-align: left !important;
-				margin-top: 10px;
-			}
+				.search-example {
+					width: 300px !important;
+					text-align: left !important;
+					margin-top: 10px !important;
+				}
 			}
 		}
 	}
@@ -1059,11 +1059,6 @@ footer {
 						transition: all .2s ease-in-out;
 						box-shadow: 0 0 10px 0 rgba(255,215,49,.75)
 					}
-				}
-				.search-example {
-					width: 300px !important;
-					text-align: left !important;
-					margin-bottom: 10px;
 				}
 			}
 		}
