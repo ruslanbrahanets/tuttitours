@@ -1026,7 +1026,7 @@ footer {
 		    align-items: center;
 				width: 380px;
 				height: 60px;
-		    border-radius: 10px;
+		    border-radius: 5px;
 		    background: rgba(255, 255, 255, 0.8);
 		    input {
 		    	margin-left: 21px;
@@ -1045,7 +1045,7 @@ footer {
 				}
 				&-button {
 					background: #ffcd00;
-					border-radius: 10px;
+					border-radius: 5px;
 					padding: 0 40px;
 					display: inline-block;
 					text-align: center;
@@ -1055,6 +1055,7 @@ footer {
 					transition: all .2s ease-in-out;
 					&:hover {
 						background: #FFD731;
+						color: #fff;
 						transition: all .2s ease-in-out;
 						box-shadow: 0 0 10px 0 rgba(255,215,49,.75)
 					}
