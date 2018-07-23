@@ -221,10 +221,9 @@ $spin-deg: 36deg;
 				line-height: 42px;
 			}
 			&-search {
+				display: flex;
+				flex-direction: column;
 				margin-top: 88px;
-				.row {
-					justify-content: center;
-				}
 			}
 			.dropdown-menu {
 		    display: flex;
@@ -258,7 +257,6 @@ $spin-deg: 36deg;
 		   }
 			.search {
 				display: flex;
-		    align-items: center;
 				width: 380px;
 				height: 60px;
 		    border-radius: 5px;
@@ -292,13 +290,16 @@ $spin-deg: 36deg;
 						margin-top: 18px;
 					}
 				}
-				.search-example {
-					width: 300px !important;
-					text-align: left !important;
-					margin-top: 10px !important;
-				}
+
 			}
 		}
+		.search-example {
+			text-align: center;
+					margin: auto;
+					margin-top: 10px;
+					padding-left: 40px;
+					width: 300px;
+				}
 	}
 	&-hot, &-simple, &-testimonials {
 		padding: 50px 0;
