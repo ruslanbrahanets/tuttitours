@@ -46,128 +46,14 @@ $font-size-header: 20px;
 $car-color: $border-color;
 $spin-deg: 36deg;
 
-/* Меню */
-.menu {
-	position: fixed;
-	z-index: 99;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	padding: 25px 50px 0;
-	font-family: "PNSemibold";
-	ul, li, a {
-		color: $white;
-		padding: 0;
-		margin: 0;
-	}
-	li {
-		display: inline-block;
-	}
-	
-	.menu-left, .menu-right {
-		display: flex;
-		align-items: center;
-		width: auto;
-		.dropdown-menu {
-		display: inline-block;
-		position: relative;
-		min-width: 0;
-  	background: none;
-  	border: none;
-  	margin: 0;
-  	padding: 0;
-		transition: all 1s ease;
-		margin-right: 50px;
-			.flag-eng {margin-right: 10px;}
-  		.down {margin: 0 0 2px 15px;}
-		.dropdown {
-			display: none;
-			position: absolute;
-  		left: 35px;
-  		width: auto;
-  		font-size: 14px;
-  		li a:hover {color: $green;}
-		}
-		}
-		.dropdown-menu:lest-child {
-			margin-right: 0;
-		}
-		.currency {
-			.dropdown-menu {
-			margin-right: 0;
-			}
-			.dropdown{
-			left: 0px;
-			margin-right: 0;
-			}
-		}
-	}
-
-  .dropdown-menu:hover .dropdown {
-  display: block;
-	}
-
-	.menu-mid {
-		display: flex;
-		align-items: center;
-		.logo {
-			margin-bottom: -55px;
-			margin-right: 38px;
-		}
-		li {
-			margin-right: 38px;
-			transition: all 0.3s ease;
-			position: relative;
-		}
-		.bluedot {
-				display: none;
-				position: absolute;
-				top: 30px;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 11px;
-				height: 11px;
-				border-radius: 50%;
-				background: $green;
-		}
-		.active {
-				display: block;
-		}
-		li:hover .bluedot {
-			display: block;
-		}
-	}
-}
-
-	.menu-right {
-		#login {
-			margin-right: 48px;
-			&:hover {
-				color: $green;
-			}
-		}
-		.cart {
-			position: relative;
-			svg {
-				
-			}
-			.counter {
-				position: absolute;
-				top: 10px;
-				left: 13px;
-				width: 18px;
-				height: 18px;
-				border-radius: 50%;
-				text-align: center;
-				font-size: 12px;
-				background: $green;
-			}
-		}
-	}
-
 
 .tutti {
+	h1 {
+		font-family: "PNSemiBold";
+		font-size: 96px;
+		line-height: 70px;
+		margin: 0;
+	}
 	h2 {
 		font-family: "PNBold";
 		font-size: 36px;
@@ -199,12 +85,210 @@ $spin-deg: 36deg;
 			padding-bottom: 60px;
 		}
 	}
+
+	/* Меню */
+	.menu {
+		position: fixed;
+		z-index: 99;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 25px 50px 0;
+		font-family: "PNSemibold";
+		ul, li, a {
+			color: $white;
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			display: inline-block;
+		}
+		
+		.menu-left, .menu-right {
+			display: flex;
+			align-items: center;
+			width: auto;
+			.dropdown-menu {
+			display: inline-block;
+			position: relative;
+			min-width: 0;
+	  	background: none;
+	  	border: none;
+	  	margin: 0;
+	  	padding: 0;
+			transition: all 1s ease;
+			margin-right: 50px;
+				.flag-eng {margin-right: 10px;}
+	  		.down {margin: 0 0 2px 15px;}
+			.dropdown {
+				display: none;
+				position: absolute;
+	  		left: 35px;
+	  		width: auto;
+	  		font-size: 14px;
+	  		li a:hover {color: $green;}
+			}
+			}
+			.dropdown-menu:lest-child {
+				margin-right: 0;
+			}
+			.currency {
+				.dropdown-menu {
+				margin-right: 0;
+				}
+				.dropdown{
+				left: 0px;
+				margin-right: 0;
+				}
+			}
+		}
+
+	  .dropdown-menu:hover .dropdown {
+	  display: block;
+		}
+
+		.menu-mid {
+			display: flex;
+			align-items: center;
+			margin-right: 50px;
+			.logo {
+				margin-bottom: -55px;
+				margin-right: 38px;
+			}
+			li {
+				margin-right: 38px;
+				transition: all 0.3s ease;
+				position: relative;
+			}
+			.bluedot {
+					display: none;
+					position: absolute;
+					top: 30px;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 11px;
+					height: 11px;
+					border-radius: 50%;
+					background: $green;
+			}
+			.active {
+					display: block;
+			}
+			li:hover .bluedot {
+				display: block;
+			}
+		}
+	}
+
+		.menu-right {
+			#login {
+				margin-right: 48px;
+				&:hover {
+					color: $green;
+				}
+			}
+			.cart {
+				position: relative;
+				.counter {
+					position: absolute;
+					top: 10px;
+					left: 13px;
+					width: 18px;
+					height: 18px;
+					border-radius: 50%;
+					text-align: center;
+					font-size: 12px;
+					background: $green;
+				}
+			}
+		}
+
 	/* Главный блок */
 	&-top {
 		background-image: url(../img/min/bg_top.jpg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		min-height: 980px;
+		color: $white;
+		.middlecontent {
+			text-align: center;
+			margin-top: 396px;
+			&-h1 div {
+				padding-top: 23px;
+				font-size: 36px;
+				line-height: 42px;
+			}
+			&-search {
+				margin-top: 88px;
+				flex-wrap: wrap;
+				.row {
+					justify-content: center;
+				}
+			}
+			.dropdown-menu {
+		    display: flex;
+		    position: relative;
+		    justify-content: space-between;
+		    align-items: center;
+		    top: 0;
+		    margin: 0;
+		    margin-right: 5px;
+		    padding: 20px;
+		    width: 160px;
+				height: 60px;
+				font-size: 18px;
+		    border-radius: 5px;
+		    background: rgba(255, 255, 255, 0.8);
+		   }
+		   .category:hover .dropdown {
+	  			display: block;
+				}
+		   .dropdown {
+		   	display: none;
+				list-style-type: none;
+				position: absolute;
+	  		margin-top: 65px;
+	  		width: 160px;
+	  		font-size: 14px;
+	  		padding: 20px;
+	  		text-align: left;
+	  		background: rgba(255, 255, 255, 0.8);
+	  		border-radius: 5px;
+		   }
+			.search {
+				display: flex;
+		    align-items: center;
+				width: 380px;
+				height: 60px;
+		    border-radius: 5px;
+		    background: rgba(255, 255, 255, 0.8);
+		    input {
+		    	margin-left: 21px;
+			    width: 20em;
+			    height: 100%;
+			    outline: 0;
+			    font-size: 18px;
+			    border: none;
+			    color: #4C4C4C;
+			    background: none;
+				}
+				&-button {
+					width: 80px;
+					height: 100%;
+					background: #FFCD00;
+					border-radius: 5px;
+					svg {
+						margin-top: 18px;
+					}
+				}
+			.search-example {
+				width: 300px !important;
+				text-align: left !important;
+			}
+		}
+		}
 	}
 	&-hot, &-simple, &-testimonials {
 		padding: 50px 0;
