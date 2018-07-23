@@ -985,7 +985,7 @@ footer {
 			padding-top: 40px;
 		}
 		.thrcline {
-			padding-top: 100px;
+			padding: 100px 0 50px 0;
 			img {
 				margin-right: 15px;
 			}
@@ -1076,7 +1076,12 @@ footer {
 			}
 		}
 	}
+	.fifline {
+    height: 100px;
+	}
 	.tutti-footer-socials {
+		float: right;
+		height: 20px;
 		a {
 			margin-right: 15px;
 			&:last-child {
@@ -1087,6 +1092,13 @@ footer {
 				width: auto;
 			}
 		}
+	}
+	.footer-line {
+		width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
 	}
 }
 
