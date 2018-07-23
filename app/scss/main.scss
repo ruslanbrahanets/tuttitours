@@ -262,7 +262,7 @@ $spin-deg: 36deg;
 		    align-items: center;
 				width: 380px;
 				height: 60px;
-		    border-radius: 5px;
+		    border-radius: 10px;
 		    background: rgba(255, 255, 255, 0.8);
 		    input {
 		    	margin-left: 21px;
@@ -275,10 +275,14 @@ $spin-deg: 36deg;
 			    background: none;
 				}
 				&-button {
-					width: 80px;
-					height: 100%;
-					background: #FFCD00;
-					border-radius: 5px;
+					background: #ffcd00;
+					border-radius: 10px;
+					padding: 0 30px;
+					display: inline-block;
+					text-align: center;
+					height: 60px;
+					line-height: calc(4.2rem - .4rem);
+					cursor: pointer;
 					svg {
 						margin-top: 18px;
 					}
@@ -286,8 +290,9 @@ $spin-deg: 36deg;
 			.search-example {
 				width: 300px !important;
 				text-align: left !important;
+				margin-top: 10px;
 			}
-		}
+			}
 		}
 	}
 	&-hot, &-simple, &-testimonials {
@@ -949,7 +954,6 @@ footer {
 		line-height: 1.4;
 	}
 	p {
-		margin-left: 10px;
 		margin-bottom: 0;
 	}
 	.tutti-footer {
@@ -959,6 +963,9 @@ footer {
     	justify-content: flex-start;
 			align-items: flex-start;
 			margin-bottom: 20px;
+			p {
+				margin-left: 10px;
+			}
 		}
 		&-ct {
 			p:first-child {
@@ -1003,6 +1010,48 @@ footer {
 		&-faq {
 			.wrap ul {
 				height: 130px;
+			}
+		}
+		&-mailing {
+			margin-bottom: 20px;
+		}
+		&-send {
+			.search {
+				display: flex;
+		    align-items: center;
+				width: 380px;
+				height: 60px;
+		    border-radius: 10px;
+		    background: rgba(255, 255, 255, 0.8);
+		    input {
+		    	margin-left: 21px;
+			    width: 20em;
+			    height: 100%;
+			    outline: 0;
+			    font-size: 18px;
+			    border: none;
+			    color: #4C4C4C;
+			    background: none;
+				}
+				a {
+					font-family: "PNSemiBold";
+					font-size: 20px;
+					color: #fff;
+				}
+				&-button {
+					background: #ffcd00;
+					border-radius: 10px;
+					padding: 0 40px;
+					display: inline-block;
+					text-align: center;
+					height: 60px;
+					line-height: calc(4.2rem - .4rem);
+					cursor: pointer;
+				}
+				.search-example {
+					width: 300px !important;
+					text-align: left !important;
+				}
 			}
 		}
 	}
