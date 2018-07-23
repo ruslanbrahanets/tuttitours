@@ -282,7 +282,13 @@ $spin-deg: 36deg;
 					text-align: center;
 					height: 60px;
 					line-height: calc(4.2rem - .4rem);
+					transition: all .2s ease-in-out;
 					cursor: pointer;
+					&:hover {
+						background: #FFD731;
+						transition: all .2s ease-in-out;
+						box-shadow: 0 0 10px 0 rgba(255,215,49,.75)
+					}
 					svg {
 						margin-top: 18px;
 					}
@@ -1047,6 +1053,12 @@ footer {
 					height: 60px;
 					line-height: calc(4.2rem - .4rem);
 					cursor: pointer;
+					transition: all .2s ease-in-out;
+					&:hover {
+						background: #FFD731;
+						transition: all .2s ease-in-out;
+						box-shadow: 0 0 10px 0 rgba(255,215,49,.75)
+					}
 				}
 				.search-example {
 					width: 300px !important;
