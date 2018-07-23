@@ -106,6 +106,7 @@ strong, b {
 		}
 		li {
 			display: inline-block;
+			transition: all .2s ease-in-out;
 		}
 		
 		.menu-left, .menu-right {
@@ -129,8 +130,14 @@ strong, b {
 				position: absolute;
 	  		left: 35px;
 	  		width: auto;
-	  		font-size: 14px;
-	  		li a:hover {color: $green;}
+				font-size: 14px;
+				li {
+					transition: all .2s ease-in-out;
+				}
+	  		li a:hover {
+					color: $green;
+					transition: all .2s ease-in-out;
+				}
 			}
 			}
 			.dropdown-menu:lest-child {
@@ -163,6 +170,7 @@ strong, b {
 				margin-right: 38px;
 				transition: all 0.3s ease;
 				position: relative;
+				transition: all .2s ease-in-out;
 			}
 			.bluedot {
 					display: none;
@@ -174,12 +182,15 @@ strong, b {
 					height: 11px;
 					border-radius: 50%;
 					background: $green;
+					transition: all .2s ease-in-out;
 			}
 			.active {
 					display: block;
+					transition: all .2s ease-in-out;
 			}
 			li:hover .bluedot {
 				display: block;
+				transition: all .2s ease-in-out;
 			}
 		}
 	}
