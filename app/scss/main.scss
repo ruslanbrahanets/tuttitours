@@ -90,6 +90,11 @@ strong, b {
 	}
 
 	/* Меню */
+	.menu-scroller {
+		padding: 5px 50px 0 !important;
+		background: rgba(0,0,0,0.75) !important;
+	}
+
 	.menu {
 		position: fixed;
 		z-index: 99;
@@ -97,7 +102,12 @@ strong, b {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+		background: rgba(0,0,0,0);
 		padding: 25px 50px 0;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out; 
+		transition: all 0.5s ease-in-out; 
 		font-family: "PNSemibold";
 		ul, li, a {
 			color: $white;
@@ -165,6 +175,23 @@ strong, b {
 			.logo {
 				margin-bottom: -55px;
 				margin-right: 38px;
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out; 
+				transition: all 0.5s ease-in-out; 
+				svg {
+					-webkit-transition: all 0.5s ease-in-out;
+					-moz-transition: all 0.5s ease-in-out;
+					-o-transition: all 0.5s ease-in-out; 
+					transition: all 0.5s ease-in-out; 
+					height: 170px;
+				}
+				.menu-scroller-logo {
+					height: 90px !important;
+				}
+			}
+			.logo-scroller {
+				margin-bottom: 0px !important;
 			}
 			li {
 				margin-right: 38px;
@@ -173,7 +200,8 @@ strong, b {
 				transition: all .2s ease-in-out;
 			}
 			.bluedot {
-					display: none;
+					opacity: 0;
+					visibility: hidden;
 					position: absolute;
 					top: 30px;
 					left: 50%;
@@ -182,15 +210,18 @@ strong, b {
 					height: 11px;
 					border-radius: 50%;
 					background: $green;
-					transition: all .2s ease-in-out;
+					-webkit-transition: all 0.4s ease-in-out;
+					-moz-transition: all 0.4s ease-in-out;
+					-o-transition: all 0.4s ease-in-out; 
+					transition: all 0.4s ease-in-out; 
 			}
 			.active {
 					display: block;
 					transition: all .2s ease-in-out;
 			}
 			li:hover .bluedot {
-				display: block;
-				transition: all .2s ease-in-out;
+				visibility: visible;
+				opacity: 1;
 			}
 		}
 	}
