@@ -1,6 +1,10 @@
 $(function() {
 	//$('.carousel').carousel();
 	var scrollerActive = false;
+	var objLANG = $("#lang");
+	var objCUR = $("#cur");
+	var objCATEG = $(".category");
+	
 	function heightDetect() {
 		$(".tutti-top").css("height", $(window).height());
 	}
@@ -17,6 +21,44 @@ $(function() {
 	$(document).scroll(function() {
 		ScrollerDetect();
 		// Если скроллим
+	});
+
+	$("#search-input").focusin(function() {
+		$(this).parent().addClass("search-active");
+	});
+
+	$("#search-input").focusout(function() {
+		$(this).parent().removeClass("search-active");
+	});
+
+	$("#lang").click(function() {
+		if(objLANG.parent().children(".dropdown").is(":hidden"))
+		{
+			objLANG.children(".down").addClass("arrow-active");
+		} else {
+			objLANG.children(".down").removeClass("arrow-active");
+		}
+		objLANG.parent().children(".dropdown").slideToggle();
+	});
+
+	$("#cur").click(function() {
+		if(objCUR.parent().children(".dropdown").is(":hidden"))
+		{
+			objCUR.children(".down").addClass("arrow-active");
+		} else {
+			objCUR.children(".down").removeClass("arrow-active");
+		}
+		objCUR.parent().children(".dropdown").slideToggle();
+	});
+
+	$(".category").click(function() {
+		if(objCATEG.children(".dropdown").is(":hidden"))
+		{
+			objCATEG.children(".dropdown-menu").children("svg").addClass("arrow-active");
+		} else {
+			objCATEG.children(".dropdown-menu").children("svg").removeClass("arrow-active");
+		}
+		objCATEG.children(".dropdown").slideToggle();
 	});
 	 
 	function ScrollerDetect() {
