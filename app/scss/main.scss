@@ -384,7 +384,7 @@ strong, b {
 				line-height: calc(4.2rem - .4rem);
 			}
 			a {
-				font-family: PNBold;
+				font-family: "PNBold";
 				font-size: 20px;
 				color: $white;
 				transition: all .2s ease-in-out 0s;
@@ -690,7 +690,7 @@ strong, b {
 				line-height: calc(4.2rem - .4rem);
 			}
 			a {
-				font-family: PNBold;
+				font-family: "PNBold";
 				font-size: 20px;
 				color: $white;
 				transition: all .2s ease-in-out 0s;
@@ -970,10 +970,114 @@ strong, b {
 	}
 	&-guide {
 		/* Карточка отзыва */
+		padding-top: 100px;
 		&-card {
-			min-height: 740px;
+			position: relative;
+			width: 100%;
+			height: 515px;
+			background-color: $white;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
 			border-radius: 10px;
-			box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+			/* Верхняя часть карточки */
+			&-above {
+				position: relative;
+				height: 515px;
+				width: 725px;
+				overflow: hidden;
+				border-radius: 10px;
+				/* Фоновая картинка */
+				img {
+					width: 725px;
+    			height: 515px;
+    			object-fit: cover;
+    			object-position: 0% 0%;
+					object-fit: cover;
+					border-radius: 10px;
+					box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+				}
+			}
+			/* Нижняя часть карточки */
+			&-below {
+				padding: 40px 60px;
+				height: 100%;
+				width: 415px;
+				h6 {
+					font-family: "PNSemiBold";
+					font-size: 14px;
+					color: #D4D4D4;
+					line-height: 1;
+					margin-bottom: 20px;
+				}
+				h4 {
+					font-family: "PNSemiBold";
+					font-size: 24px;
+					color: #222222;
+					line-height: 1;
+					margin-bottom: 10px;
+				}
+				p {
+					font-family: "PNRegular";
+					line-height: 21px;
+    			font-size: 16px;
+    			letter-spacing: 0.02em;
+					color: #4c4c4c;
+					margin-bottom: 20px;
+					height: 252px;
+					overflow: hidden;
+				}
+			}
+			&-btn {
+				display: block;
+				text-align: left;
+				margin-top: 30px;
+				&-a {
+					background-color: $green;
+					border-radius: 10px;
+					padding: 0 40px;
+					width: 180px;
+					display: inline-block;
+					text-align: center;
+					height: 60px;
+					line-height: calc(4.2rem - .4rem);
+				}
+				a {
+					font-family: "PNBold";
+					font-size: 20px;
+					color: $white;
+					transition: all .2s ease-in-out 0s;
+					&:hover {
+						background-color: #19E8BE;
+						transition: all .2s ease-in-out;
+						box-shadow: 0px 0px 10px 0px rgba(25, 232, 190, 0.75);
+					}
+				}
+			}
+		}
+		&-btn {
+			display: block;
+			text-align: center;
+			margin-top: 60px;
+			&-a {
+				background-color: $green;
+				border-radius: 10px;
+				padding: 0 40px;
+				width: 260px;
+				display: inline-block;
+				text-align: center;
+				height: 60px;
+				line-height: calc(4.2rem - .4rem);
+			}
+			a {
+				font-family: "PNBold";
+				font-size: 20px;
+				color: $white;
+				transition: all .2s ease-in-out 0s;
+				&:hover {
+					background-color: #19E8BE;
+					transition: all .2s ease-in-out;
+					box-shadow: 0px 0px 10px 0px rgba(25, 232, 190, 0.75);
+				}
+			}
 		}
 	}
 	&-questions {
@@ -989,7 +1093,7 @@ strong, b {
 				margin-bottom: 30px;
 			}
 			p {
-				font-family: PNSemiBold;
+				font-family: "PNSemiBold";
 				font-size: 24px;
 				margin-bottom: 60px;
 				a {
@@ -1052,7 +1156,7 @@ strong, b {
 				line-height: calc(4.2rem - .4rem);
 			}
 			a {
-				font-family: PNBold;
+				font-family: "PNBold";
 				font-size: 20px;
 				color: $white;
 				transition: all .2s ease-in-out 0s;
