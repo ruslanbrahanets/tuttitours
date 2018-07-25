@@ -60,6 +60,24 @@ $(function() {
 		}
 		objCATEG.children(".dropdown").slideToggle();
 	});
+
+	$(document).mouseup(function (e) {
+		if (!objLANG.parent().is(e.target) 
+		    && objLANG.parent().has(e.target).length === 0 && !objLANG.parent().children(".dropdown").is(":hidden")) {
+			objLANG.children(".down").removeClass("arrow-active");
+			objLANG.parent().children(".dropdown").slideUp();
+		}
+		if (!objCUR.parent().is(e.target) 
+		    && objCUR.parent().has(e.target).length === 0 && !objCUR.parent().children(".dropdown").is(":hidden")) {
+			objCUR.children(".down").removeClass("arrow-active");
+			objCUR.parent().children(".dropdown").slideUp();
+		}
+		if (!objCATEG.is(e.target) 
+		    && objCATEG.has(e.target).length === 0 && !objCATEG.children(".dropdown").is(":hidden")) {
+			objCATEG.children(".dropdown-menu").children("svg").removeClass("arrow-active");
+			objCATEG.children(".dropdown").slideUp();
+		}
+	});
 	 
 	function ScrollerDetect() {
 		var s_top = $(window).scrollTop();
