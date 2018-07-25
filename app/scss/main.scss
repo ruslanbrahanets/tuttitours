@@ -932,6 +932,22 @@ strong, b {
 					margin-top: 5px;
 				}
 			}
+		.carousel-indicators {
+			bottom: auto;
+			top: 36px;
+			li {
+				width: 20px;
+				height: 20px;
+				border: 2px solid #222222;
+				border-radius: 50%;
+				&:nth-child(2) {
+					margin: 0 20px;
+				}
+			}
+			.active {
+					background: #222222;
+				}
+		}
 		}
 	}
 	/* Баннер */
