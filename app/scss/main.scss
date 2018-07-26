@@ -92,7 +92,8 @@ strong, b {
 	/* Меню */
 	.menu-scroller {
 		padding: 5px 50px 0 !important;
-		background: rgba(0,0,0,0.75) !important;
+		background: rgba(255, 255, 255, 1) !important;
+		border-bottom: 1px solid rgba(34, 34, 34, .15);
 	}
 
 	.menu {
@@ -233,6 +234,18 @@ strong, b {
 				opacity: 1;
 			}
 		}
+	}
+	.cube {
+		position: fixed;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-right: 1px solid rgba(34, 34, 34, .15);
+    border-bottom: 1px solid rgba(34, 34, 34, .15);
+    top: 66px;
+    left: 48%;
+    transform: rotate(45deg);
+    z-index: 99;
 	}
 
 		.menu-right {
