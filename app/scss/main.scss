@@ -94,6 +94,9 @@ strong, b {
 		padding: 5px 50px 0 !important;
 		background: rgba(255, 255, 255, 1) !important;
 		border-bottom: 1px solid rgba(34, 34, 34, .15);
+		.logo-scroller {
+			transform: translateY(10px);
+		}
 	}
 
 	.menu {
@@ -183,6 +186,7 @@ strong, b {
 			align-items: center;
 			margin-right: 50px;
 			.logo {
+				z-index: 100;
 				margin-bottom: -55px;
 				margin-right: 38px;
 				-webkit-transition: all 0.5s ease-in-out;
@@ -236,18 +240,21 @@ strong, b {
 		}
 	}
 	.cube {
+		display: none;
 		position: fixed;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     background-color: white;
     border-right: 1px solid rgba(34, 34, 34, .15);
     border-bottom: 1px solid rgba(34, 34, 34, .15);
-    top: 66px;
-    left: 48%;
+		top: 79px;
+    left: 48.7%;
     transform: rotate(45deg);
-    z-index: 99;
+		z-index: 99;
 	}
-
+	.cubeon {
+		display: inline-block;
+	}
 		.menu-right {
 			#login {
 				margin-right: 48px;
