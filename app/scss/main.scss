@@ -147,6 +147,9 @@ strong, b {
 				-o-transition: all 0.4s ease-in-out; 
 				transition: all 0.4s ease-in-out; 
 			}
+			.down-active path  {
+				fill: #000;
+			}
 			.white-bg {
 				padding: 10px 5px 10px 10px;
 				background: $white;
@@ -197,6 +200,8 @@ strong, b {
 			.logo {
 				z-index: 100;
 				margin-bottom: -55px;
+				position: relative;
+				top:0;
 				margin-right: 38px;
 				-webkit-transition: all 0.5s ease-in-out;
 				-moz-transition: all 0.5s ease-in-out;
@@ -212,6 +217,9 @@ strong, b {
 				.menu-scroller-logo {
 					height: 90px !important;
 				}
+			}
+		    .logo-go {
+				top:13px;
 			}
 			.logo-scroller {
 				margin-bottom: 0px !important;
@@ -251,15 +259,15 @@ strong, b {
 	.cube {
 		display: none;
 		position: fixed;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-right: 1px solid rgba(34, 34, 34, .15);
-    border-bottom: 1px solid rgba(34, 34, 34, .15);
+		width: 50px;
+		height: 50px;
+		background-color: white;
+		border-right: 1px solid rgba(34, 34, 34, .15);
+		border-bottom: 1px solid rgba(34, 34, 34, .15);
 		top: 79px;
-    left: 48.7%;
-    transform: rotate(45deg);
-		z-index: 99;
+		left: 48.42%;
+		transform: rotate(45deg);
+		z-index: 9;
 	}
 	.cubeon {
 		display: inline-block;
@@ -268,7 +276,7 @@ strong, b {
 			#login {
 				margin-right: 48px;
 				&:hover {
-					color: $green;
+					color: $green !important;
 				}
 			}
 			.cart {
@@ -284,6 +292,9 @@ strong, b {
 					font-size: 12px;
 					background: $green;
 				}
+			}
+			.cart-active svg path {
+				fill: #000;
 			}
 		}
 
