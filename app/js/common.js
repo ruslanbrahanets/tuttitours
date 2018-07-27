@@ -88,13 +88,17 @@ $(function() {
 			$(".menu").addClass("menu-scroller");
 			$(".cube").addClass("cubeon");
 			$("#Deskw_1").addClass("menu-scroller-logo");
-			$("#Deskw_1").parent().addClass("logo-scroller");	
+			$("#Deskw_1").parent().addClass("logo-scroller");
+			$(".menu a").addClass("menu-black");
+			$(".dropdown").addClass("white-bg");
 		} else if(s_top < yes && scrollerActive==true) {
 			scrollerActive = false;
 			$(".cube").removeClass("cubeon");
 			$(".menu").removeClass("menu-scroller");
 			$("#Deskw_1").removeClass("menu-scroller-logo");
 			$("#Deskw_1").parent().removeClass("logo-scroller");
+			$(".menu a").removeClass("menu-black");
+			$(".dropdown").removeClass("white-bg");
 		}
 	}
 });
