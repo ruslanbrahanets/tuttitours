@@ -4,6 +4,7 @@ $(function() {
 	var objLANG = $("#lang");
 	var objCUR = $("#cur");
 	var objCATEG = $(".category");
+	var myVar = null;
 	
 	function heightDetect() {
 		$(".tutti-top").css("height", $(window).height());
@@ -86,11 +87,22 @@ $(function() {
 		if(s_top > yes && scrollerActive==false){
 			scrollerActive = true;
 			$(".menu").addClass("menu-scroller");
-			$(".cube").addClass("cubeon");
 			$("#Deskw_1").addClass("menu-scroller-logo");
 			$("#Deskw_1").parent().addClass("logo-scroller");
 			$(".menu a").addClass("menu-black");
 			$(".dropdown").addClass("white-bg");
+			$(".down").addClass("down-active");
+			$(".cart").addClass("cart-active");
+			myVar = setTimeout(function(){
+				$(".cube").addClass("cubeon");
+				$(".dw0").css("fill","#000");
+				$(".logo").addClass("logo-go");
+				if(scrollerActive == false) {
+					$(".cube").removeClass("cubeon");
+					$(".dw0").css("fill","#fff");
+					$(".logo").removeClass("logo-go");
+				}
+			},500);
 		} else if(s_top < yes && scrollerActive==true) {
 			scrollerActive = false;
 			$(".cube").removeClass("cubeon");
@@ -99,6 +111,10 @@ $(function() {
 			$("#Deskw_1").parent().removeClass("logo-scroller");
 			$(".menu a").removeClass("menu-black");
 			$(".dropdown").removeClass("white-bg");
+			$(".dw0").css("fill","#fff");
+			$(".logo").removeClass("logo-go");
+			$(".down").removeClass("down-active");
+			$(".cart").removeClass("cart-active");
 		}
 	}
 });
