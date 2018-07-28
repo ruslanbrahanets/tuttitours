@@ -118,3 +118,59 @@ $(function() {
 	}
 });
 
+$(document).scroll(function() {
+		ScrollerDetect();
+		// Если скроллим
+});
+
+function ScrollerDetect() {
+		var s_top = $(window).scrollTop();
+		var bl1 = $("#bl1").offset().top;
+    var bl2 = $("#bl2").offset().top;
+    var bl3 = $("#bl3").offset().top;
+    var bl4 = $("#bl4").offset().top;
+    var bl5 = $("#bl5").offset().top;
+    var bl6 = $("#bl6").offset().top;
+		s_top = s_top + 100;
+		if(s_top > bl1 && s_top < bl2){
+			var GO = $("#bl1").parent().children(".under").position().top - 15;
+      $(".tutu").css("top",GO);
+      return;
+      
+		} 
+    
+    if(s_top > bl2 && s_top < bl3){
+			var GO = $("#bl2").parent().children(".under").position().top + $("#bl2").parent().position().top - 15;
+      $(".tutu").css("top",GO);
+      return;
+      
+		} 
+
+		if(s_top > bl3 && s_top < bl4){
+			var GO = $("#bl3").parent().children(".under").position().top + $("#bl2").parent().position().top - 15;
+      $(".tutu").css("top",GO);
+      return;
+      
+		} 
+
+		if(s_top > bl4 && s_top < bl5){
+			var GO = $("#bl4").parent().children(".under").position().top + $("#bl3").parent().position().top - 15;
+      $(".tutu").css("top",GO);
+      return;
+      
+		} 
+
+		if(s_top > bl5 && s_top < bl6){
+			var GO = $("#bl5").parent().children(".under").position().top + $("#bl4").parent().position().top - 15;
+      $(".tutu").css("top",GO);
+      return;
+      
+		} 
+    
+    if(s_top > bl6){
+			var GO = $("#bl6").parent().children(".under").position().top + $("#bl5").parent().position().top - 15;
+      $(".tutu").css("top",GO);
+      return;
+      
+		} 
+	}
