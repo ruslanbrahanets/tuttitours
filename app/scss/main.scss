@@ -288,6 +288,73 @@ strong, b {
 		}
 
 	/* Главный блок */
+	.conr {
+		position: relative;
+	}
+	.line {
+		width: 1px;
+		height: 100%;
+		position:absolute;
+		left: -5px;
+		top: 0;
+		background-color: transparent;
+		border-left: 2px dashed #14C8A3;
+		z-index: 98;
+	}
+	
+	.tutu {
+		width:30px;
+		height:30px;
+		position:absolute;
+		left: -27px;
+		top: -20px;
+		text-align: center;
+		color:#fff;
+		border-radius:50% ;
+		transition: all 0.6s ease-in-out;
+		z-index: 101;
+	}
+	
+	body {
+		padding:25px;
+		padding-top:100px;
+	}
+	
+	.section {
+		position:relative;
+	}
+	
+	.section > .under1, .section > .under2, .section > .under3 {
+		position: relative;
+		height: 1px;
+		background-color: #14C8A3;
+		top:-50px ;
+		left: -110px;
+	}
+	
+	.section > .under1 {
+		width:31%;
+	}
+	
+	.section > .under2 {
+		width:37%;
+	}
+	
+	.section > .under3 {
+		width:41%;
+	}
+	
+	.under1:before, .under2:before, .under3:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -9px;
+		width: 20px;
+		height: 20px;
+		background-color: #14C8A3;
+		border-radius: 100%;
+		z-index: 99;
+	}
 	&-top {
 		background-image: url(../img/min/bg_top.jpg);
 		background-position: center;
