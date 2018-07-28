@@ -215,11 +215,12 @@ strong, b {
 					height: 170px;
 				}
 				.menu-scroller-logo {
-					height: 90px !important;
+					height: 75px !important;
 				}
 			}
 		    .logo-go {
-				top:13px;
+				top:-7px;
+				padding: 10px 0;
 			}
 			.logo-scroller {
 				margin-bottom: 0px !important;
@@ -255,23 +256,6 @@ strong, b {
 				opacity: 1;
 			}
 		}
-	}
-	.cube {
-		display: none;
-		position: absolute;
-		left: 50%;
-		margin-left: -25px;
-		width: 50px;
-		height: 50px;
-		background-color: white;
-		border-right: 1px solid rgba(34, 34, 34, .15);
-		border-bottom: 1px solid rgba(34, 34, 34, .15);
-		top: 51px;
-		transform: rotate(45deg);
-		z-index: -1;
-	}
-	.cubeon {
-		display: inline-block;
 	}
 		.menu-right {
 			#login {

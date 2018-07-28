@@ -4,7 +4,6 @@ $(function() {
 	var objLANG = $("#lang");
 	var objCUR = $("#cur");
 	var objCATEG = $(".category");
-	var myVar = null;
 	
 	function heightDetect() {
 		$(".tutti-top").css("height", $(window).height());
