@@ -96,6 +96,7 @@ $(function() {
 				$(".cube").addClass("cubeon");
 				$(".dw0").css("fill","#000");
 				$(".logo").addClass("logo-go");
+				$(".counter").css("color","#fff");
 				if(scrollerActive == false) {
 					$(".cube").removeClass("cubeon");
 					$(".dw0").css("fill","#fff");
