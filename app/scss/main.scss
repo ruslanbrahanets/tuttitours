@@ -296,6 +296,15 @@ strong, b {
 		background-color: transparent;
 		border-left: 2px dashed #14C8A3;
 		z-index: 98;
+		&-start {
+			position: absolute;
+			left: -15px;
+			top: -20px;
+			width: 30px;
+			height: 30px;
+			background-color: #14c8a3;
+			border-radius: 100%;
+		}
 	}
 	
 	.tutu {
@@ -325,7 +334,7 @@ strong, b {
 		height: 1px;
 		background-color: #14C8A3;
 		top:-50px ;
-		left: -256px;
+		left: -254px;
 	}
 	
 	.section > .under1 {
@@ -343,7 +352,7 @@ strong, b {
 	.section > .under4 {
 		width: 60%;
 		top: 105px;
-		left: -351px;
+		left: -349px;
 	}
 
 	.section > .under5 {
@@ -353,16 +362,16 @@ strong, b {
 	.section > .under6 {
 		width: 60%;
 		top: 105px;
-		left: -351px;
+		left: -349px;
 	}
 	
 	.under1:before, .under2:before, .under3:before, .under4:before, .under5:before, .under6:before {
 		content: '';
 		position: absolute;
 		left: 0;
-		top: -9px;
-		width: 20px;
-		height: 20px;
+		top: -7px;
+		width: 15px;
+		height: 15px;
 		background-color: #14C8A3;
 		border-radius: 100%;
 		z-index: 98;
@@ -499,7 +508,7 @@ strong, b {
 		}
 	}
 	&-testimonials {
-		padding: 50px 0 100px;
+		padding: 50px 0 0 0;
 	}
 	/* О нас */
 	&-about {
@@ -1103,7 +1112,7 @@ strong, b {
 	}
 	/* Баннер */
 	&-bn2 {
-		margin: 140px 0;
+		margin: 145px 0;
 		height: 460px;
 		background-image: url(../img/min/bus.jpg);
 		background-position: 100% 85%;
@@ -1175,14 +1184,14 @@ strong, b {
 	}
 	&-guide {
 		.guidecar {
-			margin-top: 112px;
+			margin-top: 60px;
 			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
 			border-radius: 10px;
 			.carousel-indicators {
 				margin: 0;
 				bottom: auto;
 				right: auto;
-				top: -66px;
+				top: -80px;
 				li {
 					width: 20px;
 					height: 20px;
@@ -1203,7 +1212,6 @@ strong, b {
 			}
 		}
 		/* Карточка отзыва */
-		padding-top: 100px;
 		&-card {
 			position: relative;
 			width: 100%;
