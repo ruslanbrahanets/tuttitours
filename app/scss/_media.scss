@@ -1,10 +1,7 @@
 @import "vars";
 
 
-/*==========  Desktop First  ==========*/
-
-//Extra large: ≥1200px
-@include media-breakpoint-down(xl) {
+@media only screen and (max-width: 1600px) {
 	.line {
 		left: 100px !important;
 	}
@@ -20,6 +17,16 @@
 	.section > .under4 {
 		left: -239px !important;
 	}
+	.tutu {
+		left: 78px;
+	}
+}
+
+/*==========  Desktop First  ==========*/
+
+//Extra large: ≥1200px
+@include media-breakpoint-down(xl) {
+	
 }
 
 //Large: ≥992px
