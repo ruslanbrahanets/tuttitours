@@ -68,6 +68,8 @@ strong, b {
     color: #222;
 		line-height: 1.4;
 		margin-bottom: 10px;
+		max-height: 50px;
+    overflow: hidden;
 	}
 	p {
 		font-family: "PNRegular";
@@ -120,6 +122,10 @@ strong, b {
 			padding: 0;
 			margin: 0;
 		}
+		a {
+			font-size: 16px;
+			font-family: "PNSemiBold";
+		}
 		li {
 			display: inline-block;
 			transition: all .2s ease-in-out;
@@ -150,20 +156,24 @@ strong, b {
 				fill: #000;
 			}
 			.white-bg {
-				padding: 10px 5px 10px 10px;
+				padding: 15px;
 				background: $white;
 				border-radius: 5px ;
 				-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
-    		box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+				box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+				a {
+					font-family: "PNRegular";
+				}
 			}
 			.dropdown {
 				display: none;
 				position: absolute;
-	  		left: 35px;
+	  		left: 0px;
 	  		width: auto;
 				font-size: 14px;
 				li {
 					transition: all .2s ease-in-out;
+					margin: 5px 0;
 				}
 	  		li a:hover {
 					color: $green !important;
@@ -359,7 +369,7 @@ strong, b {
 		top: 117px;
 		left: -349px;
 	}
-
+	
 	.section > .under5 {
 		top: 12px;
 	}
@@ -561,7 +571,7 @@ strong, b {
 		&-card {
 			position: relative;
 			width: 100%;
-			height: 400px;
+			height: 430px;
 			background-color: $white;
 			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
 			border-radius: 10px;
@@ -698,6 +708,8 @@ strong, b {
 					color: #4c4c4c;
 					line-height: 1.4;
 					letter-spacing: 0;
+					max-height: 35px;
+					overflow: hidden;
 				}
 				.price-be {
 					font-family: "PNRegular";
@@ -869,7 +881,7 @@ strong, b {
 		&-card {
 			position: relative;
 			width: 100%;
-			height: 365px;
+			height: 380px;
 			background-color: $white;
 			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
 			border-radius: 10px;
@@ -1002,12 +1014,14 @@ strong, b {
 				padding: 25px;
 				height: 180px;
 				p {
-					font-family: "PNRegular";
+					font-family: PNRegular;
 					font-size: 14px;
 					color: #4c4c4c;
-					line-height: 1;
+					line-height: 1.2;
 					letter-spacing: 0;
-					margin-bottom: 20px;
+					margin-bottom: 10px;
+					max-height: 30px;
+					overflow: hidden;
 				}
 				.price-be {
 					font-family: "PNRegular";
@@ -1038,9 +1052,13 @@ strong, b {
 					display: inline-block;
 				}
 				&-left {
+					height: 100px;
 					width: auto;
 				}
 				&-right {
+					position: absolute;
+					bottom: 20px;
+					left: 25px;
 					&-info {
 						display: inline-block;
 					}
