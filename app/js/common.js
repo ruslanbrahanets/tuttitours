@@ -7,7 +7,7 @@ $(function() {
 	var objCATEG = $(".category");
 	var goscroll = false;
 	var isScrolling = null;
-	var scrollPos = 0;
+	var old = 0;
 	
 	function init() {
 		Counterway = -Math.abs(51);
@@ -25,7 +25,7 @@ $(function() {
 		heightDetect();
 	});
 	
-	$(document).scroll(function() {
+	$(window).scroll(function() {
 		ScrollerDetect();
 		WayToLand();
 		// Если скроллим
@@ -126,11 +126,19 @@ $(function() {
 		}
 	}
 
+	window.onscroll = function (e) {
+		//console.log(window.scrollY); // Value of scroll Y in px
+		old+=1;
+		//var xxx = Counterway + "px";
+		console.log(old);
+		//$(".tutu").css("top",xxx);
+	};
+
 	function WayToLand() {
 		$(".under").css("width","0%");
 		goscroll = true;
 		var s_top = $(window).scrollTop();	
-		var bl1 = $("#bl1").offset().top;
+		var bl1 = $(".search-example").offset().top;
 		var bl2 = $("#bl2").offset().top;
 		var bl3 = $("#bl3").offset().top;
 		var bl4 = $("#bl4").offset().top;
@@ -144,21 +152,23 @@ $(function() {
 		}*/
 		//console.log(s_top + " " + opredelitel);
 		var st = $(window).scrollTop();
-		if (st > scrollPos){
+		//console.log($(window).scrollTop());
+		if (st > bl1){
 			$(".tutu").removeClass("tutu-reverse");
 		} else {
 			$(".tutu").addClass("tutu-reverse");
 		}
-		scrollPos = st;
-		
-		if(s_top < bl1) {
+		if (st > bl1){
+			
+		}
+		/*if(s_top < bl1) {
 			Counterway = -Math.abs(51);
 			opredelitel = Counterway;
 			$(".tutu").css("top",Counterway);
 			$(".tutu").css("opacity","0");
 			return;
 		}
-		$(".tutu").css("opacity","1");
+		/*$(".tutu").css("opacity","1");
 		if(s_top > bl1 && s_top < bl2){
 			Counterway = 123;
 			opredelitel = Counterway;
@@ -200,7 +210,7 @@ $(function() {
 			$(".tutu").css("top",Counterway);
 			$(".under6").css("width","100%");
 			return;
-		}
+		}*/
 
 	}
 });

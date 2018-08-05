@@ -324,7 +324,7 @@ strong, b {
 		position:absolute;
 		left: 127px;
 		top: -51px;
-		opacity: 0;
+		opacity: 1;
 		text-align: center;
 		color:#fff;
 		border-radius:50% ;
@@ -334,6 +334,8 @@ strong, b {
 	}
 
 	.tutu-reverse {
+
+
 		-webkit-transform: rotate(180deg);
 		-moz-transform: rotate(180deg);
 		-o-transform: rotate(180deg);
