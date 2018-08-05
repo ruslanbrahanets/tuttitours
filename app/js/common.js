@@ -10,9 +10,12 @@ $(function() {
 	var scrollPos = 0;
 	var firstAnimation = false;
 	runonce = false;
+	var a = null;
+	var AnimStart = false;
 	
 	function init() {
 		Counterway = -Math.abs(51);
+		CalculateUnderPosition();
 	}
 
 	init();
@@ -20,18 +23,21 @@ $(function() {
 	function heightDetect() {
 		$(".tutti-top").css("height", $(window).height());
 	}
+
 	heightDetect();
 	ScrollerDetect();
 
 	$(window).resize(function() {
 		heightDetect();
+		CalculateUnderPosition();
 	});
 	
 	$(window).on('scroll', scroller);
 
 	function scroller() {
-		ScrollerDetect();
 		WayToLand();
+		ScrollerDetect();
+		
 		// Если скроллим
 	}
 
@@ -131,7 +137,12 @@ $(function() {
 	}
 
 	function WayToLand() {
-		$(".under").css("width","0%");
+		var under1 = $(".under1").offset().top;
+		var under2 = $(".under2").offset().top;
+		var under3 = $(".under3").offset().top;
+		var under4 = $(".under4").offset().top;
+		var under5 = $(".under5").offset().top;
+		var under6 = $(".under6").offset().top;
 		var blstart = $("#mscroller").offset().top;
 		var blstart2 = $(".line-start").offset().top;
 		var blfinish = $(".tutti-footer").offset().top;
@@ -175,11 +186,58 @@ $(function() {
 				var height = $(window).height();
 				Counterway = scroll + (height/2) - $(".tutti-top").height() - 22; 
 				$(".tutu").css("top",Counterway);
+				setTimeout(function() {
+					var air1 = $(".tutu").position().top;
+					var air2 = $(".tutu").parent().position().top;
+					var AirTOP = air1 + air2;
+					if(AirTOP > under1 && AirTOP <= under2) {
+						$(".under1").css("width","46%");
+						//return;
+					}
+					if(AirTOP > under2 && AirTOP <= under3) {
+						$(".under2").css("width","46%");
+						//return;
+					}
+					if(AirTOP > under3 && AirTOP <= under4) {
+						$(".under3").css("width","46%");
+						//return;
+					}
+					if(AirTOP > under4 && AirTOP <= under5) {
+						$(".under4").css("width","46%");
+						//return;
+					}
+					if(AirTOP > under5 && AirTOP <= under6) {
+						$(".under5").css("width","46%");
+						//return;
+					}
+					if(AirTOP > under6) {
+						$(".under6").css("width","46%");
+						//return;
+					}
+				},100);
+				
 			} else {
 				$(".tutu").css("opacity","0");
 			}
+			
+			//console.log(AirTOP);
 		}
 		return false;
+	}
+
+	function CalculateUnderPosition() {
+		var LineOffsetLeft = $(".line").position().left;
+		console.log(LineOffsetLeft);
+		$('.under').each(function(i,elem) {
+			//var UnderOffsetLeft = $(this).parent().parent().position().left;
+			var UnderOffsetLeft2= $(this).parent().parent().parent().position().left;
+			var res =  UnderOffsetLeft2;
+			var calc_result = res - LineOffsetLeft + 7.5;
+			calc_result = calc_result * (-1);
+			calc_result = calc_result + "px";
+			$(this).css("left",calc_result);
+		});
+		
 	}
 });
 

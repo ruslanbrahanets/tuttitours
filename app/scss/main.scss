@@ -357,10 +357,11 @@ strong, b {
 	}
 
 	.under {
-		-webkit-transition: all 0.5s ease-in-out;
-		-moz-transition: all 0.5s ease-in-out;
-		-o-transition: all 0.5s ease-in-out; 
-		transition: all 0.5s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out; 
+		transition: all 0.4s ease-in-out;
+
 		width: 0%; 	   
 	}
 
@@ -369,12 +370,12 @@ strong, b {
 		height: 1px;
 		background-color: #14C8A3;
 		top:-55px ;
-		left: -254px;
+		left: 0;
 	}
 
 	.section > .under4 {
 		top: 117px;
-		left: -349px;
+		left: 0;
 	}
 	
 	.section > .under5 {
@@ -383,7 +384,7 @@ strong, b {
 
 	.section > .under6 {
 		top: 108px;
-    	left: -239px!important;
+    	left: 0;
 	}
 	
 	.under1:before, .under2:before, .under3:before, .under4:before, .under5:before, .under6:before {
