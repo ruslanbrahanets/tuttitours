@@ -257,7 +257,8 @@ strong, b {
 					transition: all 0.4s ease-in-out; 
 			}
 			.active {
-					display: block;
+					visibility: visible;
+					opacity: 1;
 					transition: all .2s ease-in-out;
 			}
 			li:hover .bluedot {

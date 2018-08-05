@@ -159,8 +159,11 @@ $(function() {
 			} else {
 				$(".tutu").addClass("tutu-reverse");
 			}
+			$(".under1").css("width","0%");
 			$(".tutu").css("top","-47px");
+			
 			scrollPos = scroll;
+			
 		} else {
 			if(firstAnimation) 
 			{
@@ -190,6 +193,29 @@ $(function() {
 					var air1 = $(".tutu").position().top;
 					var air2 = $(".tutu").parent().position().top;
 					var AirTOP = air1 + air2;
+					if(AirTOP <= under1) {
+	
+					}
+					if(AirTOP <= under2) {
+						$(".under2").css("width","0%");
+						//return;
+					}
+					if(AirTOP <= under3) {
+						$(".under3").css("width","0%");
+						//return;
+					}
+					if(AirTOP <= under4) {
+						$(".under4").css("width","0%");
+						//return;
+					}
+					if(AirTOP <= under5) {
+						$(".under5").css("width","0%");
+						//return;
+					}
+					if(AirTOP <= under6) {
+						$(".under6").css("width","0%");
+						//return;
+					}
 					if(AirTOP > under1 && AirTOP <= under2) {
 						$(".under1").css("width","46%");
 						//return;
