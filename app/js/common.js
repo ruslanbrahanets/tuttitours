@@ -137,29 +137,29 @@ $(function() {
 	function WayToLand() {
 		$(".under").css("width","0%");
 		goscroll = true;
-		var s_top = $(window).scrollTop();	
-		var bl1 = $(".search-example").offset().top;
-		var bl2 = $("#bl2").offset().top;
-		var bl3 = $("#bl3").offset().top;
-		var bl4 = $("#bl4").offset().top;
-		var bl5 = $("#bl5").offset().top;
-		var bl6 = $("#bl6").offset().top;
-		s_top = s_top + 400;
+		//var s_top = $(window).scrollTop();	
+		//var bl1 = $(".search-example").offset().top;
+		//var bl2 = $("#bl2").offset().top;
+		//var bl3 = $("#bl3").offset().top;
+		//var bl4 = $("#bl4").offset().top;
+		//var bl5 = $("#bl5").offset().top;
+		//var bl6 = $("#bl6").offset().top;
+		//s_top = s_top + 400;
 		/*if(opredelitel < Counterway) {
 			$(".tutu").addClass("tutu-reverse");
 		} else {
 			$(".tutu").removeClass("tutu-reverse");
 		}*/
 		//console.log(s_top + " " + opredelitel);
-		var st = $(window).scrollTop();
+		var scroll = $(window).scrollTop();
+		var height = $(window).height();
+		Counterway = scroll + (height/2) - $(".tutti-top").height(); 
+		$(".tutu").css("top",Counterway);
 		//console.log($(window).scrollTop());
-		if (st > bl1){
+		if (scroll > bl1){
 			$(".tutu").removeClass("tutu-reverse");
 		} else {
 			$(".tutu").addClass("tutu-reverse");
-		}
-		if (st > bl1){
-			
 		}
 		/*if(s_top < bl1) {
 			Counterway = -Math.abs(51);
