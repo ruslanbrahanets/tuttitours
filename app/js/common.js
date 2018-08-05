@@ -7,7 +7,9 @@ $(function() {
 	var objCATEG = $(".category");
 	var goscroll = false;
 	var isScrolling = null;
-	var old = 0;
+	var scrollPos = 0;
+	var firstAnimation = false;
+	runonce = false;
 	
 	function init() {
 		Counterway = -Math.abs(51);
@@ -25,11 +27,13 @@ $(function() {
 		heightDetect();
 	});
 	
-	$(window).scroll(function() {
+	$(window).on('scroll', scroller);
+
+	function scroller() {
 		ScrollerDetect();
 		WayToLand();
 		// Если скроллим
-	});
+	}
 
 	$("#search-input").focusin(function() {
 		$(this).parent().addClass("search-active");
@@ -126,92 +130,56 @@ $(function() {
 		}
 	}
 
-	window.onscroll = function (e) {
-		//console.log(window.scrollY); // Value of scroll Y in px
-		old+=1;
-		//var xxx = Counterway + "px";
-		console.log(old);
-		//$(".tutu").css("top",xxx);
-	};
-
 	function WayToLand() {
 		$(".under").css("width","0%");
-		goscroll = true;
-		//var s_top = $(window).scrollTop();	
-		//var bl1 = $(".search-example").offset().top;
-		//var bl2 = $("#bl2").offset().top;
-		//var bl3 = $("#bl3").offset().top;
-		//var bl4 = $("#bl4").offset().top;
-		//var bl5 = $("#bl5").offset().top;
-		//var bl6 = $("#bl6").offset().top;
-		//s_top = s_top + 400;
-		/*if(opredelitel < Counterway) {
-			$(".tutu").addClass("tutu-reverse");
-		} else {
-			$(".tutu").removeClass("tutu-reverse");
-		}*/
-		//console.log(s_top + " " + opredelitel);
+		var blstart = $("#mscroller").offset().top;
+		var blstart2 = $(".line-start").offset().top;
+		var blfinish = $(".tutti-footer").offset().top;
 		var scroll = $(window).scrollTop();
-		var height = $(window).height();
-		Counterway = scroll + (height/2) - $(".tutti-top").height(); 
-		$(".tutu").css("top",Counterway);
-		//console.log($(window).scrollTop());
-		if (scroll > bl1){
-			$(".tutu").removeClass("tutu-reverse");
+		var checkerW = 10;
+		var width = $(window).width(); 
+		if(scroll>blstart && scroll<(blstart2-200))
+		{
+			firstAnimation = true;
+			$(".tutu").css("transition-duration","0.3s");
+			$(".tutu").css("opacity","1");
+			if (scroll > scrollPos){
+				$(".tutu").removeClass("tutu-reverse");
+			} else {
+				$(".tutu").addClass("tutu-reverse");
+			}
+			$(".tutu").css("top","-47px");
+			scrollPos = scroll;
 		} else {
-			$(".tutu").addClass("tutu-reverse");
+			if(firstAnimation) 
+			{
+				$(".tutu").css("transition-duration","0.3s");
+				firstAnimation = false;
+			} else {
+				$(".tutu").css("transition-duration","0.1s");
+			}
+			if(scroll>=(blstart2-200) && scroll<(blfinish-250)) {
+				$(".tutu").css("opacity","1");
+				if (scroll > scrollPos){
+					if($(".tutu").hasClass("tutu-reverse")) {	
+						$(".tutu").removeClass("tutu-reverse");
+					}
+				} else {
+					if($(".tutu").hasClass("tutu-reverse")) {
+						
+					} else {
+						$(".tutu").addClass("tutu-reverse");
+					}
+				}
+				scrollPos = scroll;
+				var height = $(window).height();
+				Counterway = scroll + (height/2) - $(".tutti-top").height() - 22; 
+				$(".tutu").css("top",Counterway);
+			} else {
+				$(".tutu").css("opacity","0");
+			}
 		}
-		/*if(s_top < bl1) {
-			Counterway = -Math.abs(51);
-			opredelitel = Counterway;
-			$(".tutu").css("top",Counterway);
-			$(".tutu").css("opacity","0");
-			return;
-		}
-		/*$(".tutu").css("opacity","1");
-		if(s_top > bl1 && s_top < bl2){
-			Counterway = 123;
-			opredelitel = Counterway;
-			$(".tutu").css("top",Counterway);
-			$(".under1").css("width","42%");
-			return;
-		} 
-		if(s_top > bl2 && s_top < bl3){
-			Counterway = 585;
-			opredelitel = Counterway;
-			$(".tutu").css("top",Counterway);
-			$(".under2").css("width","49.5%");
-			return;
-		} 
-		if(s_top > bl3 && s_top < bl4){
-			Counterway = 2372;
-			opredelitel = Counterway;
-			$(".tutu").css("top",Counterway);
-			$(".under3").css("width","52%");
-			return;
-		} 
-		if(s_top > bl4 && s_top < bl5){
-			Counterway = 3905;
-			opredelitel = Counterway;
-			$(".tutu").css("top",Counterway);
-			$(".under4").css("width","103%");
-			return;
-		}
-		if(s_top > bl5 && s_top < bl6){
-			Counterway = 5328;
-			opredelitel = Counterway;
-			$(".tutu").css("top",Counterway);
-			$(".under5").css("width","43.5%");
-			return;
-		}
-		if(s_top > bl6){
-			Counterway = 6220;
-			opredelitel = Counterway;
-			$(".tutu").css("top",Counterway);
-			$(".under6").css("width","100%");
-			return;
-		}*/
-
+		return false;
 	}
 });
 
