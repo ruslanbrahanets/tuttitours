@@ -13,12 +13,9 @@
 @media only screen and (max-width: 1600px) {
 	.tutti .section>.under4 {
     top: -550px;
-		left: -388px;
+		left: 0;
 	}
-	.tutti .section>.under1, .tutti .section>.under2, .tutti .section>.under3, 	.tutti .section>.under5, .tutti .section>.under6
-	{
-		left: -144px;
-	}
+	
 	.tutti .line {
 		left: 100px;
 	}
@@ -66,9 +63,7 @@
 }
 
 @media only screen and (max-width: 1366px) {
-	.tutti .section>.under1, .tutti .section>.under2, .tutti .section>.under3, .tutti .section>.under4, .tutti .section>.under5, .tutti .section>.under6 {
-    left: -77px;
-	}
+	
 	.tutti .tutu {
 		left: 28px;
 	}
