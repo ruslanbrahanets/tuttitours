@@ -324,7 +324,7 @@ strong, b {
 		position:absolute;
 		left: 127px;
 		top: -51px;
-		opacity: 1;
+		opacity: 0;
 		text-align: center;
 		color:#fff;
 		border-radius:50% ;
@@ -334,8 +334,6 @@ strong, b {
 	}
 
 	.tutu-reverse {
-
-
 		-webkit-transform: rotate(180deg);
 		-moz-transform: rotate(180deg);
 		-o-transform: rotate(180deg);
@@ -1728,14 +1726,33 @@ footer {
 }
 
 /* tours-trips */
-.trip-list .region-upper-content {
-	padding-bottom: 35px;
-}
-.trip-list .region-upper-content {
-	position: relative;
-	z-index: 3;
-}
 
+.tutti {
+	&-breadcrumbs {
+		&-row {
+			margin-bottom: 20px;
+			font-size: 18px;
+			font-family: "PNRegular";
+			color: #14C8A3;
+			padding-top: 20px;
+			a {
+				color: #059B76;
+				cursor: pointer;
+			}
+			&-home {
+				margin-right: 10px;
+			}
+			&-separator {
+				color: #4c4c4c;
+			}
+		}
+	}
+	&-filters {
+		form {
+			clear: both;
+		}
+	}
+}
 
 
 @import "media";
