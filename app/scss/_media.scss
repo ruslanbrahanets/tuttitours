@@ -12,7 +12,6 @@
 
 @media only screen and (max-width: 1600px) {
 	.tutti .section>.under4 {
-    top: -550px;
 		left: 0;
 	}
 	
@@ -23,7 +22,7 @@
 		left: 78px;
 	}
 	.tutti .menu .menu-mid {
-		margin-right: 35px;
+		margin-right: 70px;
 	}
 	.tutti .menu {
 		padding: 15px 25px 0;	
@@ -71,7 +70,7 @@
 		left: 50px;
 	}
 	.tutti .menu .menu-mid {
-		margin-right: 35px;
+		margin-right: 50px;
 	}
 	.tutti .menu a {
 		font-size: 14px;
@@ -175,6 +174,12 @@
 	}
 	.tutti-bn2-bg {
 		transform: translateY(-15px);
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.tutti .menu .menu-left .dropdown-menu .drop-p, .tutti .menu .menu-right .dropdown-menu .drop-p {
+		min-width: auto;
 	}
 }
 
@@ -334,7 +339,7 @@
 
 //Medium: ≤768px
 @include media-breakpoint-up(md) {
-	
+
 }
 
 //Large: ≤992px
@@ -346,9 +351,6 @@
 @include media-breakpoint-up(xl) {
 	.tutti-hot-card-below-left {
     width: auto;
-	}
-	.tutti-filters-line {
-		display: flex;
 	}
 }
 

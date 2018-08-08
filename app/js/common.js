@@ -108,11 +108,12 @@ $(function() {
 			$("#Deskw_1").parent().addClass("logo-scroller");
 			$(".menu a").addClass("menu-black");
 			$(".dropdown").addClass("white-bg");
+			$(".dropdown").addClass("drop-dist");
 			$(".down").addClass("down-active");
 			$(".cart").addClass("cart-active");
 			myVar = setTimeout(function(){
 				$(".cube").addClass("cubeon");
-				$(".dw0").css("fill","#000");
+				$(".dw0").css("fill","#222222");
 				$(".logo").addClass("logo-go");
 				$(".counter").css("color","#fff");
 				if(scrollerActive == false) {
@@ -129,6 +130,7 @@ $(function() {
 			$("#Deskw_1").parent().removeClass("logo-scroller");
 			$(".menu a").removeClass("menu-black");
 			$(".dropdown").removeClass("white-bg");
+			$(".dropdown").removeClass("drop-dist");
 			$(".dw0").css("fill","#fff");
 			$(".logo").removeClass("logo-go");
 			$(".down").removeClass("down-active");
@@ -217,27 +219,36 @@ $(function() {
 						//return;
 					}
 					if(AirTOP > under1 && AirTOP <= under2) {
-						$(".under1").css("width","46%");
+						var width = $(window).width();
+						var width_under = 44;
+						if (width < 1600) {
+							width_under = 40;
+						}
+						if (width < 1360) {
+							width_under = 30;
+						}
+						width_under = width_under + "%";
+						$(".under1").css("width",width_under);
 						//return;
 					}
 					if(AirTOP > under2 && AirTOP <= under3) {
-						$(".under2").css("width","46%");
+						$(".under2").css("width","49.5%");
 						//return;
 					}
 					if(AirTOP > under3 && AirTOP <= under4) {
-						$(".under3").css("width","46%");
+						$(".under3").css("width","52%");
 						//return;
 					}
 					if(AirTOP > under4 && AirTOP <= under5) {
-						$(".under4").css("width","46%");
+						$(".under4").css("width","35%");
 						//return;
 					}
 					if(AirTOP > under5 && AirTOP <= under6) {
-						$(".under5").css("width","46%");
+						$(".under5").css("width","43%");
 						//return;
 					}
 					if(AirTOP > under6) {
-						$(".under6").css("width","46%");
+						$(".under6").css("width","35%");
 						//return;
 					}
 				},100);
@@ -265,6 +276,12 @@ $(function() {
 		});
 		
 	}
+
+	$("#inlight1,#inlight2,#inlight3").focusin(function() {
+		$(this).parent().addClass("focuslight");
+	}).focusout(function() {
+		$(this).parent().removeClass("focuslight");
+	});
 });
 
 

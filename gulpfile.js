@@ -50,6 +50,16 @@ gulp.task('js', function() {
 	.pipe(browsersync.reload({ stream: true }))
 });
 
+gulp.task('jsfilter', function() {
+	return gulp.src([
+		'app/libs/jquery-asRange/dist/jquery-asRange.min.js' // Always at the end
+		])
+	.pipe(concat('tripsrange.min.js'))
+	.pipe(uglify()) // Mifify js (opt.)
+	.pipe(gulp.dest('app/js'))
+	.pipe(browsersync.reload({ stream: true }))
+});
+
 gulp.task('IE', function() {
 	return gulp.src([
 		'app/libs/html5shiv/es5-shim.min.js',
@@ -60,6 +70,18 @@ gulp.task('IE', function() {
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/libs'))
+	.pipe(browsersync.reload({ stream: true }))
+});
+
+gulp.task('jspages', function() {
+	return gulp.src([
+		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/bootstrap/js/bootstrap.min.js',
+		'app/js/otherpages.js' // Always at the end
+		])
+	.pipe(concat('otherpages.min.js'))
+	.pipe(uglify()) // Mifify js (opt.)
+	.pipe(gulp.dest('app/js'))
 	.pipe(browsersync.reload({ stream: true }))
 });
 
@@ -78,7 +100,7 @@ gulp.task('rsync', function() {
 	}))
 });
 
-gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
+gulp.task('watch', ['styles', 'js', 'jsfilter', 'jspages', 'browser-sync'], function() {
 	gulp.watch('app/scss/**/*.scss', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browsersync.reload)
@@ -97,7 +119,7 @@ gulp.task('image', function() {
 	.pipe(gulp.dest('dist/img/full')); 
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'image', 'styles', 'js', 'IE'], function() {
+gulp.task('build', ['removedist', 'imagemin', 'image', 'styles', 'js', 'IE', 'jsfilter', 'jspages' ], function() {
 
 	var buildFiles = gulp.src([
 		'app/*.html',
@@ -108,10 +130,22 @@ gulp.task('build', ['removedist', 'imagemin', 'image', 'styles', 'js', 'IE'], fu
 		'app/css/main.min.css',
 		]).pipe(gulp.dest('dist/css'));
 
+	var buildCss = gulp.src([
+		'app/css/tripsrange.min.css',
+		]).pipe(gulp.dest('dist/css'));
+
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
 		]).pipe(gulp.dest('dist/js'));
 	
+	var buildJs = gulp.src([
+		'app/js/otherpages.min.js',
+		]).pipe(gulp.dest('dist/js'));
+
+	var buildJs = gulp.src([
+		'app/js/tripsrange.min.js',
+		]).pipe(gulp.dest('dist/js'));
+
 	var buildJs = gulp.src([
 		'app/libs/libs.min.js',
 		]).pipe(gulp.dest('dist/libs'));
