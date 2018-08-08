@@ -1,38 +1,308 @@
 @import "vars";
 
 
-@media only screen and (max-width: 1600px) {
-	.line {
-		left: 100px !important;
-	}
-	.tutt {
-		left: 78px !important;
-	}
-	.section > .under1, .section > .under2, .section > .under3, .section > .under4, .section > .under5, .section > .under6 {
-		left: -144px !important;
-	}
-	.section > .under4 {
-		left: -239px !important;
-	}
-	.section > .under4 {
-		left: -239px !important;
-	}
-	.tutu {
-		left: 78px;
-	}
-}
-
 /*==========  Desktop First  ==========*/
 
 //Extra large: ≥1200px
 @include media-breakpoint-down(xl) {
+	.tutti-hot-card {
+		height: 430px;
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	.tutti .section>.under4 {
+    top: -550px;
+		left: 0;
+	}
 	
+	.tutti .line {
+		left: 100px;
+	}
+	.tutti .tutu { 
+		left: 78px;
+	}
+	.tutti .menu .menu-mid {
+		margin-right: 35px;
+	}
+	.tutti .menu {
+		padding: 15px 25px 0;	
+	}
+	.tutti .menu .menu-left .dropdown-menu .down, .tutti .menu .menu-right .dropdown-menu .down {
+		margin: 0 0 2px 5px;
+	}
+	.tutti .menu .menu-left .dropdown-menu, .tutti .menu .menu-right .dropdown-menu {
+    margin-right: 50px;
+	}
+	.tutti .menu .menu-mid .logo svg {
+		height: 100px;
+	}
+	.tutti .menu .menu-mid .logo {
+		margin-right: 0px;
+	}
+	.tutti .menu {
+		padding: 25px 50px 0;
+	}
+	.tutti .menu-scroller {
+    padding: 0px 50px 0 !important;
+    background: #fff!important;
+    border-bottom: 1px solid rgba(34,34,34,.15);
+	}
+	.tutti .menu .menu-mid li:last-child {
+    margin-right: 0px;
+	}
+	.tutti .menu .menu-mid .logo-go {
+		padding: 10px 50px;
+	}
+	.tutti .menu .menu-mid .logo {
+		padding: 10px 50px;
+	}
+	.tutti .menu-right #login {
+    margin-right: 25px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	
+	.tutti .tutu {
+		left: 28px;
+	}
+	.tutti .line {
+		left: 50px;
+	}
+	.tutti .menu .menu-mid {
+		margin-right: 35px;
+	}
+	.tutti .menu a {
+		font-size: 14px;
+	}
+	.tutti .menu .menu-mid li {
+		margin-right: 15px;
+	}
+	.tutti .menu {
+		padding: 15px 25px 0;	
+	}
+	.tutti .menu .menu-left .dropdown-menu .down, .tutti .menu .menu-right .dropdown-menu .down {
+		margin: 0 0 2px 5px;
+	}
+	.tutti .menu .menu-left .dropdown-menu, .tutti .menu .menu-right .dropdown-menu {
+    margin-right: 20px;
+	}
+	.tutti .menu .menu-mid .logo svg {
+		height: 100px;
+	}
+	.tutti .menu .menu-mid .logo {
+		margin-right: 0px;
+	}
+	.tutti .menu-scroller {
+    padding: 0px 25px 0 !important;
+    background: #fff!important;
+    border-bottom: 1px solid rgba(34,34,34,.15);
+	}
+	.tutti .menu .menu-mid li:last-child {
+    margin-right: 0px;
+	}
+	.tutti .menu .menu-mid .logo-go {
+    padding: 10px;
+	}
+	.tutti .menu .menu-mid .logo {
+    padding: 10px;
+	}
+	.tutti .menu-right #login {
+    margin-right: 25px;
+	}
+	.tutti-bn1-lefts p {
+    font-size: 60px;
+    line-height: 66px;
+	}
+	.tutti-bn1-lefts p:nth-child(2) {
+    font-size: 50px;
+    line-height: 54px;
+	}
+	.tutti-bn1-lefts p:nth-child(3) {
+    font-size: 40px;
+    line-height: 42px;
+	}
+	.tutti-bn1, .tutti-bn1-bg, .tutti-bn1-rights {
+		height: 400px;
+	}
+	.tutti-bn1 .sale25 {
+		font-size: 94px;
+	}
+	.tutti-bn1 .sale25-pers {
+		font-size: 45px;
+	}
+	.tutti-bn1 .sale25-pers div:last-child {
+    padding-top: 5px;
+    font-size: 24px;
+	}	
+	.tutti-bn1 .sale25-sale {
+    font-size: 70px;
+    line-height: 50px;
+    padding-top: 0px;
+	}
+	.tutti h2 {
+    font-size: 24px;
+	}
+	.tutti-bn1-rights-text p {
+    color: #fff;
+		font-size: 14px;
+	}
+	.tutti-bn1 h2 {
+    margin-bottom: 10px;
+	}
+	.tutti-bn1-rights-text p {
+		margin-bottom: 20px;
+	}
+	.tutti-bn1-rights-text {
+		margin-top: 10px;
+	}
+	.tutti-bn2, .tutti-bn2-rights {
+		height: 320px;
+	}
+	.tutti-bn2-rights-text p {
+		font-size: 14px;
+	}
+	.tutti-bn2-rights-text {
+    padding-left: 150px;
+	}
+	.tutti-bn2-lefts {
+    padding-right: 150px;
+	}
+	.tutti-bn2-bg img {
+    width: 350px;
+		height: 350px;
+	}
+	.tutti-bn2-bg {
+		transform: translateY(-15px);
+	}
 }
 
 //Large: ≥992px
 @include media-breakpoint-down(lg) {
-
+	.tutti .line {
+		left: 100px;
+	}
+	.tutti .menu .menu-mid {
+		margin-right: 35px;
+	}
+	.tutti .menu a {
+		font-size: 14px;
+	}
+	.tutti .menu .menu-mid li {
+		margin-right: 15px;
+	}
+	.tutti .menu {
+		padding: 15px 25px 0;	
+	}
+	.tutti .menu .menu-left .dropdown-menu .flag-eng, .tutti .menu .menu-right .dropdown-menu .flag-eng {
+    display: none;
+	}
+	.tutti .menu .menu-left .dropdown-menu .down, .tutti .menu .menu-right .dropdown-menu .down {
+		margin: 0 0 2px 5px;
+	}
+	.tutti .menu .menu-left .dropdown-menu, .tutti .menu .menu-right .dropdown-menu {
+    margin-right: 20px;
+	}
+	.tutti .menu .menu-mid .logo svg {
+		height: 100px;
+	}
+	.tutti .menu .menu-mid .logo {
+		margin-right: 0px;
+	}
+	.tutti .menu-scroller {
+    padding: 0px 25px 0 !important;
+    background: #fff!important;
+    border-bottom: 1px solid rgba(34,34,34,.15);
+	}
+	.tutti .menu .menu-mid li:last-child {
+    margin-right: 0px;
+	}
+	.tutti .menu .menu-mid .logo-go {
+    padding: 10px;
+	}
+	.tutti .menu .menu-mid .logo {
+    padding: 10px;
+	}
+	.tutti .menu-right #login {
+    margin-right: 25px;
+	}
+	.tutti .line {
+    display: none;
+	}
+	.tutti .section>.under1, .tutti .section>.under2, .tutti .section>.under3, .tutti .section>.under4, .tutti .section>.under5, .tutti .section>.under6 {
+		display: none;
+	}
+	.tutti .tutu {
+		display: none;
+	}
+	.tutti-bn1-lefts p {
+    font-size: 60px;
+    line-height: 66px;
+	}
+	.tutti-bn1-lefts p:nth-child(2) {
+    font-size: 50px;
+    line-height: 54px;
+	}
+	.tutti-bn1-lefts p:nth-child(3) {
+    font-size: 40px;
+    line-height: 42px;
+	}
+	.tutti-bn1, .tutti-bn1-bg, .tutti-bn1-rights {
+		height: 400px;
+	}
+	.tutti-bn1 .sale25 {
+		font-size: 94px;
+	}
+	.tutti-bn1 .sale25-pers {
+		font-size: 45px;
+	}
+	.tutti-bn1 .sale25-pers div:last-child {
+    padding-top: 5px;
+    font-size: 24px;
+	}	
+	.tutti-bn1 .sale25-sale {
+    font-size: 70px;
+    line-height: 50px;
+    padding-top: 0px;
+	}
+	.tutti h2 {
+    font-size: 24px;
+	}
+	.tutti-bn1-rights-text p {
+    color: #fff;
+		font-size: 14px;
+	}
+	.tutti-bn1 h2 {
+    margin-bottom: 10px;
+	}
+	.tutti-bn1-rights-text p {
+		margin-bottom: 20px;
+	}
+	.tutti-bn1-rights-text {
+		margin-top: 10px;
+	}
+	.tutti-bn2, .tutti-bn2-rights {
+		height: 320px;
+	}
+	.tutti-bn2-rights-text p {
+		font-size: 14px;
+	}
+	.tutti-bn2-rights-text {
+    padding-left: 150px;
+	}
+	.tutti-bn2-lefts {
+    padding-right: 150px;
+	}
+	.tutti-bn2-bg img {
+    width: 350px;
+		height: 350px;
+	}
+	.tutti-bn2-bg {
+		transform: translateY(-15px);
+	}
 }
+
 
 //Medium: ≥768px
 @include media-breakpoint-down(md) {
@@ -76,6 +346,9 @@
 @include media-breakpoint-up(xl) {
 	.tutti-hot-card-below-left {
     width: auto;
+	}
+	.tutti-filters-line {
+		display: flex;
 	}
 }
 
