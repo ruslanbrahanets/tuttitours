@@ -136,7 +136,7 @@ $(function() {
 		var bl4 = $("#bl4").offset().top;
 		var bl5 = $("#bl5").offset().top;
 		var bl6 = $("#bl6").offset().top;
-		s_top = s_top + 400;
+		s_top = s_top + 600;
 		/*if(opredelitel < Counterway) {
 			$(".tutu").addClass("tutu-reverse");
 		} else {
@@ -198,11 +198,9 @@ $(function() {
 			Counterway = 6220;
 			opredelitel = Counterway;
 			$(".tutu").css("top",Counterway);
-			$(".under6").css("width","100%");
+			$(".under6").css("width","38%");
 			return;
 		}
 
 	}
 });
-
-
