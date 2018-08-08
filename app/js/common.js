@@ -276,6 +276,7 @@ $(function() {
 		});
 		
 	}
+<<<<<<< HEAD
 
 	$("#inlight1,#inlight2,#inlight3").focusin(function() {
 		$(this).parent().addClass("focuslight");
@@ -285,3 +286,6 @@ $(function() {
 });
 
 
+=======
+});
+>>>>>>> e40b521eea7e33de38ca273984f96d1873e23564
