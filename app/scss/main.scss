@@ -1876,7 +1876,8 @@ footer {
 	}
 	.map {
 		border-radius: 20px;
-    overflow: hidden;
+		overflow: hidden;
+		height: 420px;
 	}
 	&-ft {
 		h5 {
@@ -1936,10 +1937,73 @@ footer {
 					svg {
 						height: 20px;
 						width: auto;
+						transition: all .2s ease-in-out 0s;
+						&:hover {
+							transition: all .2s ease-in-out 0s;
+							.yt, .g1, .tw, .fc {
+								transition: all .2s ease-in-out 0s;
+							}
+							.yt {
+								fill: #FF0000;
+							}
+							.g1, .g2 {
+								fill:#DD5144;
+							}
+							.tw {
+								fill:#5da8dc;
+								stroke:#5da8dc;
+							}
+							.fc {
+								fill:#3c5a9a;
+							}
+						}
 					}
 				}
 			}
 		}
+	}
+	.steps {
+		display: flex;
+		flex-direction: row;
+	}
+	.ex {
+		display: flex;
+		flex-direction: row;
+	}
+	.box{
+		width: 150px;
+    height: 80px;  
+		border: dashed 2px #14c8a3;
+		border-color:#14C8A3 transparent transparent transparent;
+		border-radius: 50%/75px 75px 0 0;
+	}
+	.box2{
+		width: 150px;
+    height: 80px; 
+		border: dashed 2px #14c8a3;
+		border-color:#14C8A3 transparent transparent transparent;
+		border-radius: 50%/75px 75px 0 0;
+		transform: rotate(180deg);
+		margin-left: -45px;
+    margin-top: -35px;
+	}
+	.box3{
+		width: 150px;
+    height: 80px;  
+		border: dashed 2px #14c8a3;
+		border-color:#14C8A3 transparent transparent transparent;
+		border-radius: 50%/75px 75px 0 0;
+		margin-left: -45px;
+	}
+	.box4{
+		width: 150px;
+    height: 80px;  
+		border: dashed 2px #14c8a3;
+		border-color:#14C8A3 transparent transparent transparent;
+		border-radius: 50%/35px 75px 0 0;
+		transform: rotate(180deg);
+		margin-left: -45px;
+    margin-top: -35px;
 	}
 }
 
