@@ -1962,13 +1962,14 @@ footer {
 			}
 		}
 	}
-	.steps {
-		display: flex;
-		flex-direction: row;
+	&-basket {
+		padding-top: 50px;
 	}
 	.ex {
-		display: flex;
-		flex-direction: row;
+		&:last-child {
+			margin-left: -25px;
+		}
+		position: relative;
 	}
 	.box{
 		width: 150px;
@@ -1976,6 +1977,18 @@ footer {
 		border: dashed 2px #14c8a3;
 		border-color:#14C8A3 transparent transparent transparent;
 		border-radius: 50%/75px 75px 0 0;
+	}
+	.start-ci {
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0px;
+			width: 35px;
+			height: 35px;
+			background-color: #14C8A3;
+			content: '';
+			border-radius: 100%;
+		}
 	}
 	.box2{
 		width: 150px;
@@ -2003,7 +2016,17 @@ footer {
 		border-radius: 50%/35px 75px 0 0;
 		transform: rotate(180deg);
 		margin-left: -45px;
-    margin-top: -35px;
+		margin-top: -35px;
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 35px;
+			height: 35px;
+			background-color: #14C8A3;
+			content: '';
+			border-radius: 100%;
+		}
 	}
 }
 
