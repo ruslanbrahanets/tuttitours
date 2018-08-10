@@ -64,7 +64,7 @@ $(function() {
 
 	function ScrollerDetect() {
 		var s_top = $(window).scrollTop();
-		var yes = 100;
+		var yes = 1;
 		s_top = s_top;
 		if(s_top > yes && scrollerActive==false){
 			scrollerActive = true;
