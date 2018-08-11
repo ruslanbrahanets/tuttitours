@@ -1791,12 +1791,12 @@ footer {
 	}
 	padding: 100px 0;
 	margin-top: 130px;
-	.conr {
+	.popl {
     margin-bottom: 100px;
 	}
 	.tittle-h2 {
 		padding-bottom: 60px;
-	}
+	}	
 	.section {
 		position: relative;
 		.underline {
@@ -2081,6 +2081,24 @@ footer {
 				border-radius: 100%;
 			}
 		}
+	}
+	&-book {
+		background-color: #fff;
+		box-shadow: 0 0 15px rgba(0,0,0,.15);
+		height: 140px;
+		border-radius: 10px;
+	}
+	&-details {
+		&-svg {
+			span {
+				line-height: 1;
+				font-family: "PNSemiBold";
+				font-size: 18px;
+			}
+		}
+	}
+	&-condition {
+
 	}
 	
 }
