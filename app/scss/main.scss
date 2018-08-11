@@ -1783,6 +1783,11 @@ footer {
 			margin-top: 0;
 		}
 	}
+	.tutti-hot-card, .tutti-simple-card {
+		h5 {
+			margin-bottom: 10px;
+		}
+	}
 	p {
 		margin-bottom: 15px;
 		&:last-child {
@@ -2087,9 +2092,66 @@ footer {
 		box-shadow: 0 0 15px rgba(0,0,0,.15);
 		height: 140px;
 		border-radius: 10px;
+		margin: 30px 0 50px;
+		padding: 30px;
+		.trma {
+			width: 50%;
+			padding-left: 25px;
+			.price-be {
+				font-family: PNRegular;
+				font-size: 24px;
+				color: #4c4c4c;
+				line-height: 1;
+			}
+			.price-af {
+				font-family: PNBold;
+				font-size: 48px;
+				color: #222;
+				line-height: 1;
+					.colorize {
+						color: #14c8a3;
+					}
+					.minimaze {
+						font-size: 36px;
+					}
+			}
+		}
+		&-btn {
+			text-align: center;
+			width: 100%;
+			&-a {
+				background-color: #14c8a3;
+				border-radius: 10px;
+				padding: 0 40px;
+				width: 240px;
+				display: inline-block;
+				text-align: center;
+				height: 60px;
+				line-height: calc(4.2rem - .4rem);
+				svg {
+					margin-right: 10px;
+				}
+			}
+			a {
+				font-family: "PNBold";
+				font-size: 20px;
+				color: #fff;
+				transition: all .2s ease-in-out 0s;
+				&:hover {
+					background-color: #19e8be;
+					box-shadow: 0 0 10px 0 rgba(25,232,190,.75);
+					transition: all .2s ease-in-out 0s;
+				}
+			}
+		}
 	}
 	&-details {
+		margin-bottom: 60px;
 		&-svg {
+			margin-right: 60px;
+			svg {
+				margin-right: 10px;
+			}
 			span {
 				line-height: 1;
 				font-family: "PNSemiBold";
@@ -2098,7 +2160,20 @@ footer {
 		}
 	}
 	&-condition {
-
+		&-svg {
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 15px;
+			}
+			svg {
+				margin-right: 10px;
+			}
+			span {
+				line-height: 1;
+				font-family: "PNSemiBold";
+				font-size: 18px;
+			}
+		}
 	}
 	
 }
@@ -2144,6 +2219,7 @@ footer {
     width: 15%;
 	}
 	&-filters {
+		padding-bottom: 50px;
 		&-form {
 			input {
 				width: 100%;
@@ -2218,21 +2294,25 @@ footer {
 			}
 			&-submit {
 				&-btn {
-					background-color: #14c8a3;
-					border-radius: 10px;
-					padding: 0 40px;
-					width: 140px;
-					display: inline-block;
-					text-align: center;
-					float: right;
-					height: 60px;
-					line-height: -webkit-calc(4.2rem - .4rem);
-					line-height: calc(4.2rem - .4rem);
 					a {
+						background-color: #14c8a3;
+						border-radius: 10px;
+						padding: 0 40px;
+						width: 140px;
+						display: inline-block;
+						text-align: center;
+						float: right;
+						height: 60px;
+						line-height: -webkit-calc(4.2rem - .4rem);
+						line-height: calc(4.2rem - .4rem);
 						font-family: PNBold;
 						font-size: 20px;
 						color: #fff;
 						transition: all .2s ease-in-out 0s;
+						&:hover {
+							background-color: #19e8be;
+    					box-shadow: 0 0 10px 0 rgba(25,232,190,.75);
+						}
 					}
 				}
 			}
