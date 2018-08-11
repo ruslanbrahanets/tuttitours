@@ -1964,70 +1964,104 @@ footer {
 	}
 	&-basket {
 		padding-top: 50px;
-	}
-	.ex {
-		&:last-child {
-			margin-left: -25px;
+		.distance {
+			padding-top: 75px;
 		}
-		position: relative;
-	}
-	.box{
-		width: 150px;
-    height: 80px;  
-		border: dashed 2px #14c8a3;
-		border-color:#14C8A3 transparent transparent transparent;
-		border-radius: 50%/75px 75px 0 0;
-	}
-	.start-ci {
-		&:before {
-			position: absolute;
-			top: 0;
-			left: 0px;
-			width: 35px;
-			height: 35px;
-			background-color: #14C8A3;
-			content: '';
-			border-radius: 100%;
+		h2 {
+			margin-bottom: 30px;
+		}
+		h2, p {
+			text-align: center;
+		}
+		p {
+			font-size: 24px;
+		}
+		.ex {
+			&:last-child {
+				margin-left: -25px;
+			}
+			position: relative;
+		}
+		.text1, .text2, .text3 {
+			line-height: 1.2;
+			font-family: "PNSemiBold";
+			font-size: 18px;
+		}
+		.text1 {
+			margin-top: 50px;
+			margin-left: -20px;
+		}
+		.text2 {
+			margin-top: -40px;
+			margin-right: -10px;
+			transform: rotate(180deg);
+		}
+		.text3 {
+			margin-top: -40px;
+			margin-right: -15px;
+			transform: rotate(180deg);
+		}
+		.box{
+			width: 150px;
+			height: 80px;  
+			border: dashed 2px #14c8a3;
+			border-color:#14C8A3 transparent transparent transparent;
+			border-radius: 50%/75px 75px 0 0;
+			margin-top: -10px;
+		}
+		.start-ci {
+			.dot {
+				position: absolute;
+				top: 0;
+				left: 0px;
+				width: 35px;
+				height: 35px;
+				background-color: #14C8A3;
+				content: '';
+				border-radius: 100%;
+			}
+		}
+		.box2{
+			width: 150px;
+			height: 80px; 
+			border: dashed 2px #14c8a3;
+			border-color:#14C8A3 transparent transparent transparent;
+			border-radius: 50%/75px 75px 0 0;
+			transform: rotate(180deg);
+			margin-left: -45px;
+			margin-top: -45px;
+		}
+		.box3{
+			width: 150px;
+			height: 80px;  
+			border: dashed 2px #14c8a3;
+			border-color:#14C8A3 transparent transparent transparent;
+			border-radius: 50%/75px 75px 0 0;
+			margin-left: -45px;
+			margin-top: -10px;
+		}
+		.box4{
+			width: 150px;
+			height: 80px;  
+			border: dashed 2px #14c8a3;
+			border-color:#14C8A3 transparent transparent transparent;
+			border-radius: 50%/35px 75px 0 0;
+			transform: rotate(180deg);
+			margin-left: -45px;
+			margin-top: -45px;
+			.dot {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 35px;
+				height: 35px;
+				background-color: #14C8A3;
+				content: '';
+				border-radius: 100%;
+			}
 		}
 	}
-	.box2{
-		width: 150px;
-    height: 80px; 
-		border: dashed 2px #14c8a3;
-		border-color:#14C8A3 transparent transparent transparent;
-		border-radius: 50%/75px 75px 0 0;
-		transform: rotate(180deg);
-		margin-left: -45px;
-    margin-top: -35px;
-	}
-	.box3{
-		width: 150px;
-    height: 80px;  
-		border: dashed 2px #14c8a3;
-		border-color:#14C8A3 transparent transparent transparent;
-		border-radius: 50%/75px 75px 0 0;
-		margin-left: -45px;
-	}
-	.box4{
-		width: 150px;
-    height: 80px;  
-		border: dashed 2px #14c8a3;
-		border-color:#14C8A3 transparent transparent transparent;
-		border-radius: 50%/35px 75px 0 0;
-		transform: rotate(180deg);
-		margin-left: -45px;
-		margin-top: -35px;
-		&:after {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 35px;
-			height: 35px;
-			background-color: #14C8A3;
-			content: '';
-			border-radius: 100%;
-		}
-	}
+	
 }
 
 /* tours-trips */
