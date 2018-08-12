@@ -1697,58 +1697,11 @@ footer {
 }
 
 //Account-page
-	.email-pref  {
-		display: flex;
-		flex-direction: column;
-	}
-	.radio {
-		display: none;
-	}
-	.radio-custom {
-		width: 28px;
-		height: 28px;
-		border: 1px solid $green;
-		border-radius: 50%;
-		position: relative;
-		margin-right: 15px;
-	}
-	.radio-custom,
-	.label {
-		display: inline-block;
-		vertical-align: middle;
-		font-size: 18px;
-	}
-
-	.radio:checked + .radio-custom::before {
-		content: "";
-		display: block;
-		position: absolute;
-		top: 6px;
-		right: 6px;
-		bottom: 6px;
-		left: 6px;
-		background: $green;
-		border-radius: 50%;	
-	}
-
-	.line-vert{
-		display: block;
-		position: absolute;
-		margin-top: -20px;
-		left: 50%;
-		width: 1px;
-		height: 700px;
-		background: #EEEEEE;
-	}
-
-
 	.tutti-account {
-	//Favorites
-		.under1 {
-			left: 0;
-			right: 0;
-			&:before {
-				display: none;
+		.personal {
+			margin-left: 20%;
+			.un-account {
+				width: 100%;
 			}
 		}
 		.un-account {
@@ -1760,6 +1713,8 @@ footer {
     	width: 80%;
 		}
 		.email-pref {
+			display: flex;
+			flex-direction: column;
 			h4 {
 			margin-bottom: 25px;
 			font-size: 24px;
@@ -1767,6 +1722,76 @@ footer {
 			}
 			label {
 				margin-bottom: 28px;
+			}
+			.radio {
+				display: none;
+			}
+			.radio-custom {
+				width: 28px;
+				height: 28px;
+				border: 1px solid $green;
+				border-radius: 50%;
+				position: relative;
+				margin-right: 15px;
+			}
+			.radio-custom,
+			.label {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 18px;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			.radio:checked + .radio-custom::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 6px;
+				right: 6px;
+				bottom: 6px;
+				left: 6px;
+				background: $green;
+				border-radius: 50%;
+				font-size: 36px;
+			}
+		}
+		
+		.line-vert{
+			display: block;
+			position: absolute;
+			margin-top: -20px;
+			left: 50%;
+			width: 1px;
+			height: 700px;
+			background: #EEEEEE;
+		}
+		table {
+			font-size: 24px;
+			color: #4C4C4C;
+
+		}
+		td:first-child {
+				font-family: PNSemibold;
+				width: 50%;
+			}
+		.underline {
+			position: absolute;
+			top: 40px;
+			width: 100%;
+			z-index: 200;
+			border-bottom: 1px solid $green;
+		}
+		.but-send {
+			.tutti-hot-btn {
+				display: flex;
+				justify-content: flex-end;
+				margin-top: 0;
+				padding-top: 30px;
+				border-top: 1px solid $green;
+				&-a {
+					width: 160px;
+				}
 			}
 		}
 	}
