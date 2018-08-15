@@ -520,7 +520,7 @@ strong, b {
 				display: flex;
 				width: 380px;
 				height: 60px;
-		    	border-radius: 5px;
+		    border-radius: 5px;
 				background: rgba(255, 255, 255, 0.8);
 				-webkit-transition: all 0.5s ease-in-out;
 				-moz-transition: all 0.5s ease-in-out;
@@ -1699,7 +1699,7 @@ footer {
 //Account-page
 	.tutti-account {
 		.personal {
-			margin-left: 20%;
+			margin-left: 19%;
 			.un-account {
 				width: 100%;
 			}
@@ -1756,7 +1756,6 @@ footer {
 				font-size: 36px;
 			}
 		}
-		
 		.line-vert{
 			display: block;
 			position: absolute;
@@ -1768,12 +1767,13 @@ footer {
 		}
 		table {
 			font-size: 24px;
+			font-family: $default-font;
 			color: #4C4C4C;
-
 		}
 		td:first-child {
 				font-family: PNSemibold;
-				width: 50%;
+				width: 60%;
+				line-height: 1.8;
 			}
 		.underline {
 			position: absolute;
@@ -1795,6 +1795,96 @@ footer {
 			}
 		}
 	}
+
+//Basket
+.basket {
+	.simpages {
+		padding-top: 0;
+		margin-top: 0;
+	}
+	.tutti-account .un-account {
+		width: 100%;
+	}
+	.tutti-testimonials-card {
+		position: relative;
+		min-height: auto;
+		margin-top: 40px;
+		padding: 50px;
+		text-align: left;
+		.wrap div {
+			margin-top: 8px;
+			margin-left: 50px;
+			font-size: 24px;
+			font-family: PNBold;
+		}
+		img {
+			border-radius: 10px;
+		}
+		svg {
+			position: absolute;
+			right: 30px;
+			top: 30px;
+		}
+		table {
+			margin-top: 35px;
+			font-size: 18px;
+			color: #4C4C4C;
+			.first-tr {
+				color: #D4D4D4;
+			}
+			.second-tr {
+				color: #4C4C4C;
+				font-family: PNBold;
+				td {
+					padding-top: 15px;
+				}
+			}
+			td {
+			width: auto;
+			padding-right: 50px;
+			line-height: 1.2;
+			}
+			td:nth-child(5),
+			td:nth-child(10) {
+				padding-right: 0;
+			}
+		}
+	}
+	form {
+		label {
+	    font-size: 18px;
+	    margin-top: 20px;
+	    margin-left: 11px;
+	    cursor: pointer;
+	    &:first-child {
+	    	margin-top: 0;
+	    }
+	   }
+		.search {
+			display: flex;
+	    align-items: center;
+	    width: 100%;
+	    height: 60px;
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+	    border: 1px solid #d4d4d4;
+	    margin-bottom: 10px;
+	    input {
+				margin-left: 21px;
+		    width: 100%;
+		    height: 100%;
+		    outline: 0;
+		    font-size: 18px;
+		    border: none;
+		    background: 0 0;
+			}
+			::-webkit-input-placeholder { color: #D4D4D4; }
+			::-moz-placeholder          { color: #D4D4D4; } /* Firefox 19+ */
+			:-moz-placeholder           { color: #D4D4D4; } /* Firefox 18- */
+			:-ms-input-placeholder      { color: #D4D4D4; }
+		}
+	}
+}
 
 /* About Us + Guide-details pages */
 
@@ -2109,6 +2199,10 @@ footer {
 				background-color: #14C8A3;
 				content: '';
 				border-radius: 100%;
+			}
+			.dot-none {
+				background-color: white;
+				border: 1px solid #14C8A3;
 			}
 		}
 	}

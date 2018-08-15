@@ -282,4 +282,5 @@ $(function() {
 	}).focusout(function() {
 		$(this).parent().removeClass("focuslight");
 	});
+	
 });
