@@ -1804,6 +1804,7 @@ footer {
 	}
 	.tutti-account .un-account {
 		width: 100%;
+		bottom: 18px;
 	}
 	.tutti-testimonials-card {
 		position: relative;
@@ -1883,7 +1884,77 @@ footer {
 			:-moz-placeholder           { color: #D4D4D4; } /* Firefox 18- */
 			:-ms-input-placeholder      { color: #D4D4D4; }
 		}
+		.checkbox-style {
+			margin: 50px 0 33px;
+			input {
+				display: none;
+			}
+			label {
+				margin: 0;
+				font-size: 16px;
+			}
+			input[type=radio] .text {
+				font-family: PNBold;
+			}
+			.check {
+				display: inline;
+				padding: 0;
+				margin-top: 4px;
+				width: 20px;
+				height: 20px;
+				border: 1px solid $green;
+				border-radius: 5px;
+			}
+			.text {
+				margin-left: 10px;
+			}
+		}
+		.form-radio label {
+			margin-left: 0;
+		}
+		.radio {
+			display: none;
+		}
+		.radio-custom {
+			width: 28px;
+			height: 28px;
+			border: 1px solid $green;
+			border-radius: 50%;
+			position: relative;
+			margin-right: 15px;
+		}
+		.radio-custom,
+		.label {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 18px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.radio:checked + .radio-custom::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 6px;
+			right: 6px;
+			bottom: 6px;
+			left: 6px;
+			background: $green;
+			border-radius: 50%;
+			font-size: 36px;
+		}
+		.total {
+			margin-top: 60px;
+			margin-bottom: 36px;
+			font-family: PNSemibold;
+			font-size: 32px;
+		}
 	}
+	.but-send .tutti-hot-btn-a {
+			width: auto;
+			margin-top: 20px;
+		}
 }
 
 /* About Us + Guide-details pages */
