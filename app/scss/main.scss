@@ -1720,41 +1720,6 @@ footer {
 			font-size: 24px;
 			font-family: PNSemibold;
 			}
-			label {
-				margin-bottom: 28px;
-			}
-			.radio {
-				display: none;
-			}
-			.radio-custom {
-				width: 28px;
-				height: 28px;
-				border: 1px solid $green;
-				border-radius: 50%;
-				position: relative;
-				margin-right: 15px;
-			}
-			.radio-custom,
-			.label {
-				display: inline-block;
-				vertical-align: middle;
-				font-size: 18px;
-				&:hover {
-					cursor: pointer;
-				}
-			}
-			.radio:checked + .radio-custom::before {
-				content: "";
-				display: block;
-				position: absolute;
-				top: 6px;
-				right: 6px;
-				bottom: 6px;
-				left: 6px;
-				background: $green;
-				border-radius: 50%;
-				font-size: 36px;
-			}
 		}
 		.line-vert{
 			display: block;
@@ -1783,13 +1748,14 @@ footer {
 			border-bottom: 1px solid $green;
 		}
 		.but-send {
+			margin-top: 30px;
 			.tutti-hot-btn {
 				display: flex;
 				justify-content: flex-end;
 				margin-top: 0;
-				padding-top: 30px;
 				border-top: 1px solid $green;
 				&-a {
+					margin-top: 70px;
 					width: 160px;
 				}
 			}
@@ -1852,15 +1818,13 @@ footer {
 		}
 	}
 	form {
-		label {
+		.title-form {
 	    font-size: 18px;
-	    margin-top: 20px;
-	    margin-left: 11px;
-	    cursor: pointer;
+	    margin: 20px 0 13px 11px;
 	    &:first-child {
-	    	margin-top: 0;
+	    	margin-top: 10px;
 	    }
-	   }
+	  }
 		.search {
 			display: flex;
 	    align-items: center;
@@ -1871,6 +1835,7 @@ footer {
 	    border: 1px solid #d4d4d4;
 	    margin-bottom: 10px;
 	    input {
+	    	display: block;
 				margin-left: 21px;
 		    width: 100%;
 		    height: 100%;
@@ -1885,75 +1850,34 @@ footer {
 			:-ms-input-placeholder      { color: #D4D4D4; }
 		}
 		.checkbox-style {
-			margin: 50px 0 33px;
-			input {
-				display: none;
+			margin: 40px 0 35px;
+			line-height: 19px;
+			span {
+				margin-left: 35px;
 			}
-			label {
-				margin: 0;
-				font-size: 16px;
+			label:before {
+			  width: 20px;
+			  height: 20px;
+			  border-radius: 5px;
 			}
-			input[type=radio] .text {
-				font-family: PNBold;
+			input:checked + label:after {
+				content:"✔";
+				font-size: 22px;
+			  background: none;
+			  top: 2px;
+			  left: 2px;
 			}
-			.check {
-				display: inline;
-				padding: 0;
-				margin-top: 4px;
-				width: 20px;
-				height: 20px;
-				border: 1px solid $green;
-				border-radius: 5px;
-			}
-			.text {
-				margin-left: 10px;
-			}
-		}
-		.form-radio label {
-			margin-left: 0;
-		}
-		.radio {
-			display: none;
-		}
-		.radio-custom {
-			width: 28px;
-			height: 28px;
-			border: 1px solid $green;
-			border-radius: 50%;
-			position: relative;
-			margin-right: 15px;
-		}
-		.radio-custom,
-		.label {
-			display: inline-block;
-			vertical-align: middle;
-			font-size: 18px;
-			&:hover {
-				cursor: pointer;
-			}
-		}
-		.radio:checked + .radio-custom::before {
-			content: "";
-			display: block;
-			position: absolute;
-			top: 6px;
-			right: 6px;
-			bottom: 6px;
-			left: 6px;
-			background: $green;
-			border-radius: 50%;
-			font-size: 36px;
 		}
 		.total {
 			margin-top: 60px;
-			margin-bottom: 36px;
+			margin-bottom: 10px;
 			font-family: PNSemibold;
 			font-size: 32px;
 		}
 	}
 	.but-send .tutti-hot-btn-a {
 			width: auto;
-			margin-top: 20px;
+			margin-top: 50px;
 		}
 }
 
@@ -2507,6 +2431,47 @@ footer {
 			}
 		}
 	}
+}
+
+//Checkbox and radio template
+label {
+  position: relative;
+  margin-bottom: 20px;
+}
+label:last-child {
+  margin-bottom: 0;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  font-family: PNSemibold;
+}
+
+label:before {
+  content:"";
+  display: inline-block;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $green;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+input:checked + label:after {
+  content:"";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: $green;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: absolute;
+  top: 7px;
+  left: 7px;
 }
 
 @import "media";
