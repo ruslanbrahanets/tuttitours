@@ -1767,6 +1767,75 @@ footer {
 	.simpages {
 		padding-top: 0;
 		margin-top: 0;
+		.summary {
+			width: 60%;
+			margin: auto;
+			.ico-calendar {
+				margin-right: 20px;
+			}
+			.line-cost {
+				align-items: center; 
+				margin-bottom: 5px;
+			}
+			.left {
+				font-size: 18px;
+				font-family: PNSemibold;
+				span {
+					color: darkgrey;
+					margin-left: 10px;
+				}
+			}
+			.right {
+				align-items: center; 
+				.cost {
+				font-family: PNSemibold;
+				font-size: 18px;
+				}
+				.select-wrapper {
+				margin-left: 15px;
+			  position: relative;
+			  width: 98px;
+			  height: 60px;
+			  border: 1px solid grey;
+			  border-radius: 5px;
+				}
+				.select-wrapper:hover {
+				  cursor: pointer;
+				}
+				select:active, select:focus{
+				  outline:none
+				}
+				.select-wrapper select {
+				  font-size: 18px;
+				  font-family: PNSemibold;
+				  padding-left: 20px;
+				  width: 98px;
+				  height: 60px;
+				  background: transparent;
+				  border: 0;
+				  appearance: none;            /* remove arrow        */
+				  -webkit-appearance: none;    /* remove arrow Chrome */
+				  -moz-appearance: none;       /* remove arrow FF     */
+				}
+				.select-wrapper select::-ms-expand{
+				    display: none;             /* remove arrow IE     */
+				}
+				.select-arrow {
+				  position: absolute;
+				  font-size: 20px;
+				  z-index: -9999;
+				  right: 20px;
+				  top: 28px;
+				}
+			}
+		.total {
+			margin-top: 50px;
+			font-size: 18px;
+			}
+		.tutti-hot-btn-a {
+			width: 200px;
+		}
+		}
 	}
 	.tutti-account .un-account {
 		width: 100%;
@@ -1876,9 +1945,9 @@ footer {
 		}
 	}
 	.but-send .tutti-hot-btn-a {
-			width: auto;
-			margin-top: 50px;
-		}
+		width: auto;
+		margin-top: 50px;
+	}
 }
 
 /* About Us + Guide-details pages */
