@@ -252,7 +252,13 @@ strong, b {
 			-o-transform: rotate(-180deg);
 			transform: rotate(-180deg);
 		}
-
+		.trigger-custom {
+			margin-right: 40px;
+			&:hover {
+				color: white;
+				cursor: pointer;
+			}
+		}
 		.menu-mid {
 			display: flex;
 			align-items: center;
@@ -2505,6 +2511,72 @@ footer {
 			}
 		}
 	}
+}
+
+.transfers {
+	background-image: url(../img/min/bus.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.middlecontent-h1 div{
+	font-size: 64px;
+	font-family: PNSemibold;
+	}
+	.destination {
+		form {
+			margin-top: 70px;
+			div {
+				position: relative;
+				margin-bottom: 26px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				svg {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				}
+				.svg_to {
+				bottom: 15px;
+				right: 18px;
+				}
+			}
+			input {
+				display: block;
+				padding-left: 20px;
+				padding-right: 20px;
+				width: 520px;
+				height: 40px;
+				background: none;
+				border: none;
+				border-bottom: 1px solid $white;
+				&[type="text"],
+				&::placeholder {
+					color: $white;
+					font-family: PNRegular;
+					font-size: 24px;
+					line-height: 28px;
+				}
+			}
+		}	
+	}
+	.tutti-hot-btn {
+		margin-top: 50px;
+		&-a {
+			width: 160px;
+			background: #FFCD00;
+			&:hover {
+		    background-color: #FFD731;
+		    -webkit-box-shadow: 0 0 10px 0 rgba(255,215,49,.75);
+		    box-shadow: 0 0 10px 0 rgba(255,215,49,.75);
+			}
+			&:active {
+				background: #ECBE02;
+				-webkit-box-shadow: none;
+		    box-shadow: none;
+			}
+		}	
+}
 }
 
 //Checkbox and radio template
