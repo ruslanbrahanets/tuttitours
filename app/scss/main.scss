@@ -533,18 +533,19 @@ strong, b {
 				-o-transition: all 0.5s ease-in-out; 
 				transition: all 0.5s ease-in-out; 
 		    input {
+		    display: block !important;
 				margin-left: 21px;
 				-webkit-transition: all 0.5s ease-in-out;
 				-moz-transition: all 0.5s ease-in-out;
 				-o-transition: all 0.5s ease-in-out; 
 				transition: all 0.5s ease-in-out; 
-			    width: 20em;
-			    height: 100%;
-			    outline: 0;
-			    font-size: 18px;
-			    border: none;
-			    color: #4C4C4C;
-			    background: none;
+			  width: 20em;
+			  height: 100%;
+			  outline: 0;
+			  font-size: 18px;
+			  border: none;
+			  color: #4C4C4C;
+			  background: none;
 				}
 				&-button {
 					background: #ffcd00;
@@ -1633,6 +1634,7 @@ footer {
 		    border-radius: 5px;
 		    background: rgba(255, 255, 255, 0.8);
 		    input {
+		    	display: block !important;
 		    	margin-left: 21px;
 			    width: 20em;
 			    height: 100%;
@@ -2513,6 +2515,8 @@ footer {
 	}
 }
 
+// Transfers
+
 .transfers {
 	background-image: url(../img/min/bus.jpg);
 	background-position: bottom;
@@ -2577,6 +2581,90 @@ footer {
 			}
 		}	
 }
+}
+
+.row_fromto {
+  display: flex;
+  margin-top: 60px;
+  .block_fromto {
+    display: flex;
+    width: 41%;
+    min-height: 80px;
+    padding: 20px;
+    border: 1px solid #DCDCDC;
+    vertical-align: center;
+    border-radius: 10px;
+    align-items: center;
+    .svg_fromto {
+      margin-top: -3px;
+    }
+    svg {
+      margin-right: 20px;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .right div:first-child {
+      width: 160px;
+      font-size: 18px;
+      font-family: PNSemibold;
+    }
+  }
+  .fromto_s1 {
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+  }
+  .fromto_s2 {
+    margin-left: -1px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  .fromto_s3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -1px;
+    width: 19%;
+    padding: 15px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+    .wrap_s3 {
+      margin: auto;
+      font-size: 18px;
+      .cost {
+        font-family: PNSemibold;
+        font-size: 25px;
+      }
+      span {
+        color: $green;
+        margin-right: 5px;
+      }
+      bold, span {
+        font-size: 36px;
+      }
+      bold {
+      	margin-right: -5px;
+      }
+    }
+  }
+}
+
+.but_trip .tutti-hot-btn {
+	margin-top: 30px;
+  text-align: right;
+  .tutti-hot-btn-a {
+  	padding: 0;
+  }
+  svg {
+  	margin-right: 15px;
+  }
 }
 
 //Checkbox and radio template
