@@ -619,7 +619,6 @@ strong, b {
 				background-color: $green;
 				border-radius: 10px;
 				padding: 0 40px;
-				width: 240px;
 				display: inline-block;
 				text-align: center;
 				height: 60px;
@@ -874,7 +873,7 @@ strong, b {
 			& .tutti-hot-btn {
 				text-align: left;
 				&-a {
-					width: 180px;	
+					
 				}
 			}
 		}
@@ -929,7 +928,6 @@ strong, b {
 				background-color: $green;
 				border-radius: 10px;
 				padding: 0 40px;
-				width: 240px;
 				display: inline-block;
 				text-align: center;
 				height: 60px;
@@ -1201,7 +1199,7 @@ strong, b {
 				&:hover {
 						border-color: $green;
 						}
-				&:nth-child(2) {
+				&:nth-child(2n) {
 					margin: 0 20px;
 				}
 			}
@@ -1270,7 +1268,7 @@ strong, b {
 			& .tutti-hot-btn {
 				text-align: left;
 				&-a {
-					width: 180px;	
+						
 				}
 			}
 		}
@@ -1309,7 +1307,7 @@ strong, b {
 					&:hover {
 						border-color: $green;
 						}
-					&:nth-child(2) {
+					&:nth-child(2n) {
 						margin: 0 20px;
 					}
 				}
@@ -1383,7 +1381,6 @@ strong, b {
 					background-color: $green;
 					border-radius: 10px;
 					padding: 0 40px;
-					width: 180px;
 					display: inline-block;
 					text-align: center;
 					height: 60px;
@@ -1410,7 +1407,6 @@ strong, b {
 				background-color: $green;
 				border-radius: 10px;
 				padding: 0 40px;
-				width: 260px;
 				display: inline-block;
 				text-align: center;
 				height: 60px;
@@ -1507,7 +1503,6 @@ strong, b {
 				background-color: $green;
 				border-radius: 10px;
 				padding: 0 40px;
-				width: 240px;
 				display: inline-block;
 				text-align: center;
 				height: 60px;
@@ -1529,7 +1524,7 @@ strong, b {
 }
 footer {
 	position: relative;
-	z-index: 115;
+	z-index: 113;
 	min-height: 980px;
 	background-image: url(../img/min/footer.jpg);
 	background-position: center center;
@@ -1769,7 +1764,7 @@ footer {
 				border-top: 1px solid $green;
 				&-a {
 					margin-top: 70px;
-					width: 160px;
+					
 				}
 			}
 		}
@@ -1851,7 +1846,7 @@ footer {
 			font-size: 18px;
 			}
 		.tutti-hot-btn-a {
-			width: 200px;
+
 		}
 	}
 	}
