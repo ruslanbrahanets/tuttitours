@@ -329,7 +329,6 @@ strong, b {
 	}
 		.menu-right {
 			#login {
-				margin-right: 48px;
 				&:hover {
 					color: $green !important;
 				}
@@ -1464,6 +1463,7 @@ strong, b {
 				border: 1px solid #D4D4D4;
 				margin-bottom: 10px;
 				input {
+					display: block;
 					&:active {
 						border-color: #14C8A3;
 					}
@@ -2402,7 +2402,6 @@ footer {
 		display: inline-block;
     height: 60px;
 		vertical-align: top;
-		margin-right: -4px;
 	}
 	&-date {
     width: 35%;
@@ -2460,6 +2459,9 @@ footer {
 			&-category {
 				border-top: 1px solid #D4D4D4;
 				border-bottom: 1px solid #D4D4D4;
+				width: 265px;
+				margin-left: -4px;
+				margin-right: -4px;
 				.filter-content {
 					.form-textfield {
 						width: 100%;
@@ -2469,6 +2471,9 @@ footer {
 							line-height: 58px;
 							margin-bottom: 0;
 							padding: 0 30px 0;
+							&::before {
+								display: none;
+							}
 						}
 						.form-svg {
 							position: absolute;
@@ -2484,10 +2489,11 @@ footer {
 				border: 1px solid #D4D4D4;
 				border-top-right-radius: 10px;
 				border-bottom-right-radius: 10px;
+				margin-right: 8px;
 				.filter-content {
 					position: relative;
 					top: 65%;
-					padding: 0 15px;
+					padding: 0 20px;
 				}
 			}
 			&-submit {
