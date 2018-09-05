@@ -19,8 +19,8 @@ a {
 	text-decoration: none!important;
 	color: #273238;
 	&:hover {
-	  font-family: PNBold;
-	  color: black;
+		color: $green;
+
 	}
 }
 
@@ -41,13 +41,6 @@ body {
 			}
 	}
 }
-
-$border-color: #E6003E;
-$background-color: #FBFBF8;
-$border-radius-big: 6px;
-$font-size-header: 20px;
-$car-color: $border-color;
-$spin-deg: 36deg;
 
 strong, b {
 	font-weight: inherit; 
@@ -75,7 +68,7 @@ strong, b {
 	h1 {
 		font-family: "PNSemiBold";
 		font-size: 96px;
-		line-height: 70px;
+		line-height: 90px;
 		margin: 0;
 	}
 	h2 {
@@ -134,11 +127,11 @@ strong, b {
 		position: fixed;
 		z-index: 115;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		width: 100%;
 		background: rgba(0,0,0,0);
-		padding: 25px 50px 0;
+		padding: 25px 0 0;
 		-webkit-transition: all 0.5s ease-in-out;
 		-moz-transition: all 0.5s ease-in-out;
 		-o-transition: all 0.5s ease-in-out; 
@@ -156,6 +149,14 @@ strong, b {
 		li {
 			display: inline-block;
 			transition: all .2s ease-in-out;
+		}
+		.menu-left {
+			position: absolute;
+			left: 50px;
+		}
+		.menu-right {
+			position: absolute;
+			right: 50px;
 		}
 		.menu-left, .menu-right {
 			display: flex;
@@ -291,6 +292,8 @@ strong, b {
 				margin-bottom: 0px !important;
 			}
 			li {
+				width: 100px;
+				text-align: center;
 				margin-right: 38px;
 				transition: all 0.3s ease;
 				position: relative;
@@ -469,7 +472,7 @@ strong, b {
 		color: $white;
 		.middlecontent {
 			text-align: center;
-			margin-top: 396px;
+			margin-top: 300px;
 			&-h1 div {
 				padding-top: 23px;
 				font-size: 36px;
@@ -1682,6 +1685,7 @@ footer {
 	.tutti-footer-socials {
 		float: right;
 		height: 20px;
+		padding-right: 70px;
 		a {
 			margin-right: 20px;
 			&:last-child {
@@ -1778,6 +1782,8 @@ footer {
 			margin: auto;
 			.ico-calendar {
 				margin-right: 20px;
+				position: absolute;
+    		right: 0;
 			}
 			.line-cost {
 				align-items: center; 
@@ -1914,6 +1920,7 @@ footer {
 	    input {
 	    	display: block;
 				padding-left: 21px;
+				padding-right: 50px;
 		    width: 100%;
 		    height: 100%;
 		    outline: 0;
@@ -2576,7 +2583,7 @@ footer {
 			input {
 				display: block;
 				padding-left: 20px;
-				padding-right: 20px;
+				padding-right: 80px;
 				width: 520px;
 				height: 40px;
 				background: none;
@@ -2687,9 +2694,6 @@ footer {
 .but_trip .tutti-hot-btn {
 	margin-top: 30px;
   text-align: right;
-  .tutti-hot-btn-a {
-  	padding: 0;
-  }
   svg {
   	margin-right: 15px;
   }
