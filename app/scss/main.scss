@@ -2814,5 +2814,18 @@ input:checked + label:after {
 }
 
 
+/* newstyles changes */
+
+.marist {
+	h2 {
+		padding-top: 23px;
+    font-size: 36px;
+		line-height: 1;
+		color: #fff;
+		font-family: "PNRegular";
+		margin-bottom: 0!important;
+	}
+}
+
 
 @import "media";
