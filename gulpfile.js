@@ -97,7 +97,7 @@ gulp.task('izitoast', function() {
 
 gulp.task('izimodal', function() {
 	return gulp.src([
-		'app/libs/izimodal/dist/js/iziModal.js' // Always at the end
+		'app/libs/izimodal/js/iziModal.js' // Always at the end
 		])
 	.pipe(concat('izimodal.min.js'))
 	.pipe(uglify()) // Mifify js (opt.)
@@ -120,7 +120,7 @@ gulp.task('rsync', function() {
 	}))
 });
 
-gulp.task('watch', ['styles', 'js', 'jsfilter', 'jspages', 'izitoast', 'izimodal', 'browser-sync'], function() {
+gulp.task('watch', ['styles', 'js', 'jsfilter', 'jspages', 'izimodal', 'izitoast', 'browser-sync'], function() {
 	gulp.watch('app/scss/**/*.scss', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browsersync.reload)
@@ -154,6 +154,14 @@ gulp.task('build', ['removedist', 'imagemin', 'image', 'styles', 'js', 'IE', 'js
 		'app/css/tripsrange.min.css',
 		]).pipe(gulp.dest('dist/css'));
 
+	var buildCss = gulp.src([
+		'app/css/izimodal.min.css',
+		]).pipe(gulp.dest('dist/css'));
+
+	var buildCss = gulp.src([
+		'app/css/izitoast.min.css',
+		]).pipe(gulp.dest('dist/css'));
+
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
 		]).pipe(gulp.dest('dist/js'));
@@ -169,6 +177,14 @@ gulp.task('build', ['removedist', 'imagemin', 'image', 'styles', 'js', 'IE', 'js
 	var buildJs = gulp.src([
 		'app/libs/libs.min.js',
 		]).pipe(gulp.dest('dist/libs'));
+
+	var buildJs = gulp.src([
+		'app/js/izitoast.min.js',
+		]).pipe(gulp.dest('dist/js'));
+
+	var buildJs = gulp.src([
+		'app/js/izimodal.min.js',
+		]).pipe(gulp.dest('dist/js'));
 
 	var buildFonts = gulp.src([
 		'app/fonts/**/*',

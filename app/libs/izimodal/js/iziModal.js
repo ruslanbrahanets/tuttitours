@@ -1384,7 +1384,7 @@
 		    iconText: null,
 		    iconColor: '',
 		    rtl: false,
-		    width: 600,
+		    width: 450,
 		    top: null,
 		    bottom: null,
 		    borderBottom: true,
@@ -1411,7 +1411,7 @@
 		    appendToOverlay: 'body', // or false
 		    overlay: true,
 		    overlayClose: true,
-		    overlayColor: 'rgba(0, 0, 0, 0.4)',
+		    overlayColor: 'rgba(255, 255, 255, 0.75)',
 		    timeout: false,
 		    timeoutProgressbar: false,
 		    pauseOnHover: false,

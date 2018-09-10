@@ -282,5 +282,19 @@ $(function() {
 	}).focusout(function() {
 		$(this).parent().removeClass("focuslight");
 	});
+
+	$("#modal").iziModal({
+    overlayClose: false,
+    transitionIn: "fadeIn",
+    openFullscreen: false,
+    fullscreen: true,
+    headerColor: "#00BAF0",
+    background: "#fff",
+    transitionInOverlay: "fadeIn",
+    bodyOverflow: false
+	});
+	$('.justlogin').click(function() {
+		$('#modal').iziModal('open');
+	});
 	
 });

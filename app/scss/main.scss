@@ -472,7 +472,7 @@ strong, b {
 		color: $white;
 		.middlecontent {
 			text-align: center;
-			margin-top: 300px;
+			margin-top: 380px;
 			&-h1 div {
 				padding-top: 23px;
 				font-size: 36px;
@@ -786,6 +786,7 @@ strong, b {
 					font-size: 14px;
 					color: #4c4c4c;
 					line-height: 1.4;
+					margin-left: 2px;
 				}
 				.price-af {
 					font-family: "PNBold";
@@ -2739,5 +2740,79 @@ input:checked + label:after {
   top: 7px;
   left: 7px;
 }
+
+#modal {
+	border-radius: 15px!important;
+}
+.logintittle {
+	font-family: 'PNSemibold';
+	font-size: 32px;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+.loginmodal {
+	position: relative;
+	height: 500px;
+	padding: 30px;
+	&-close {
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 30px;
+	}
+	&-content {
+		height: 100%;
+		&-btn {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			svg {
+				margin-right: 15px;
+			}
+			.google-btn {
+				background-color: #ffffff;
+				box-shadow: 0 1px 10px rgba(39, 68, 74, 0.1);
+				color: rgba(39, 68, 74, 1);
+				&:hover {
+					transition: all .2s ease-in-out;
+					box-shadow: 0px 0px 10px 0px rgba(39, 68, 74, 0.2);
+				}
+				svg {
+					margin-right: calc(2.5px + 14px);
+				}
+			}
+			.facebook-btn {
+				background-color: #3B5998;
+				&:hover {
+					transition: all .2s ease-in-out;
+					box-shadow: 0px 0px 10px 0px rgba(85, 115, 178, 1);
+				}
+				svg {
+					margin-right: calc(11.6px + 10px);
+					margin-left: 5px;
+				}
+			}
+			&-a {
+				width: 265px;
+				border-radius: 10px;
+				padding: 0 30px;
+				display: inline-block;
+				text-align: center;
+				height: 60px;
+				line-height: calc(4.2rem - .4rem);
+			}
+			a {
+				text-align: left;
+				font-family: "PNRegular";
+				font-size: 18px;
+				color: $white;
+				transition: all .2s ease-in-out 0s;
+			}
+		}
+	}
+}
+
+
 
 @import "media";
