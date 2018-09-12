@@ -62,7 +62,10 @@
 }
 
 @media only screen and (max-width: 1366px) {
-	
+	.tutti-top .middlecontent {
+    text-align: center;
+    margin-top: 250px;
+	}
 	.tutti .tutu {
 		left: 28px;
 	}
@@ -177,12 +180,71 @@
 	}
 }
 
+@media only screen and (max-width: 1280px) {
+	.middlecontent {
+    text-align: center;
+    margin-top: 280px;
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	.tutti .menu .menu-left .dropdown-menu .drop-p, .tutti .menu .menu-right .dropdown-menu .drop-p {
 		min-width: auto;
 	}
+	.tutti-bn2-bg img {
+    width: 250px;
+    height: 250px;
+	}
 }
 
+@media only screen and (max-width: 800px) {
+	.large {
+		display: none;
+	}
+	.small {
+		display: inline-block;
+	}
+	.tutti-bn1 .sale25 {
+    margin-right: 30px;
+		margin-left: 30px;
+	}
+	.tutti-testimonials-card {
+		padding: 30px 30px;
+	}
+	.tutti-bn2-rights-text {
+    padding-left: 50px;
+	}
+	.tutti-bn2-lefts {
+    padding-right: 50px;
+	}
+	.tutti-bn2-bg {
+    transform: translateY(0px);
+	}
+	.tutti-guide-card-below {
+		padding: 30px 30px;
+	}
+	.tutti-guide-card-above {
+		width: 400px;
+	}
+	.tutti-questions-card {
+    min-height: auto;
+		padding: 50px 50px;
+	}
+}
+
+@media only screen and (height: 1024px) {
+	.tutti-top .middlecontent {
+			text-align: center;
+			margin-top: 400px;
+	}
+}
+
+@media only screen and (height: 1366px) {
+	.tutti-top .middlecontent {
+		text-align: center;
+		margin-top: 530px;
+	}
+}
 //Large: ≥992px
 @include media-breakpoint-down(lg) {
 	.tutti .line {
@@ -293,21 +355,204 @@
 	.tutti-bn2-rights-text p {
 		font-size: 14px;
 	}
-	.tutti-bn2-rights-text {
-    padding-left: 150px;
-	}
-	.tutti-bn2-lefts {
-    padding-right: 150px;
-	}
-	.tutti-bn2-bg img {
-    width: 350px;
-		height: 350px;
-	}
 	.tutti-bn2-bg {
-		transform: translateY(-15px);
+		transform: translateY(0px);
 	}
 }
 
+@media only screen and (max-width: 600px) {
+	.small #menuToggle {
+		top: 30px;
+		left: 30px;
+	}
+	.small svg {
+    height: 50px;
+    margin-top: -15px;
+		margin-right: 50px;
+	}
+	.tutti h1 {
+    font-family: PNSemiBold;
+		font-size: 48px;
+	}
+	.tutti h1 {
+		font-size: 48px;
+		line-height: 1.2;
+	}
+	.search-bar {
+    flex-direction: column;
+	}
+	.tutti-top .middlecontent .category {
+    margin-bottom: 20px;
+	}
+	.tutti-top .middlecontent .dropdown-menu, .tutti-top .middlecontent .search {
+		width: 100%;
+	}
+	.tutti-top .middlecontent {
+    text-align: center;
+    margin-top: 200px;
+	}
+	.tutti-top .middlecontent-search {
+		margin-top: 50px;
+	}
+	.tutti-top .search-example {
+		padding: 0;
+	}
+	.tutti-hot-card {
+    height: auto;
+	}
+	.tutti-hot-card-below {
+    display: flex;
+    flex-direction: column;
+	}
+	.tutti-hot-card-below-left {
+    width: 100%;
+	}
+	.tutti-bn1-bg {
+		display: none;
+	}
+	.tutti-bn1-rights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	}
+	.tutti-bn1-rights .tutti-hot-btn {
+    text-align: center;
+	}
+	.tutti-bn1 .sale25 {
+		margin-bottom: 20px;
+	}
+	.tutti-bn1-rights-text p {
+    margin-bottom: 20px;
+    text-align: center;
+	}
+	.tutti-bn1 h2 {
+    text-align: center;
+	}
+	.tutti-bn2-rights-text h2 {
+		text-align: center;
+	}
+	.tutti-bn2-rights .tutti-hot-btn {
+		text-align: center;
+	}
+	.tutti-bn2-rights-text {
+    padding: 30px;
+	}
+	.tutti-bn2-rights-text p {
+    font-size: 14px;
+    text-align: center;
+	}
+	.tutti-bn2-lefts {
+		display: none;
+	}
+	.tutti-guide-card {
+		flex-direction: column!important;
+	}
+	.tutti-guide-card-above {
+    width: 100%;
+	}
+	.tutti-guide-card-below p {
+		max-height: 60px;
+	}
+	.tutti-guide-card-below h6 {
+		margin-bottom: 5px;
+	}
+	.tutti-guide-card-below {
+    padding: 30px;
+    width: 100%;
+	}
+	.tutti-questions-card p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+	}
+	.tutti-questions-btn-a {
+		width: 100%;
+	}
+	.tutti-questions-card {
+		background-color: none;
+		box-shadow: none;
+	}
+	footer .tutti-footer .frline {
+    padding-top: 50px;
+	}
+	.tutti-top .middlecontent .dropdown {
+		width: 100%;
+	}
+	footer .tutti-footer-socials {
+    float: none;
+    padding-right: 0;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.tutti-about, .tutti-hot, .tutti-simple {
+    padding: 50px 0 50px;
+	}
+	.tutti-about-img {
+    min-height: 0;
+	}
+	.tutti-bn1, .tutti-bn1-bg, .tutti-bn1-rights {
+    height: 450px;
+	}
+	footer .tutti-footer .thrcline {
+    text-align: center;
+	}
+	footer .tutti-footer-send .search {
+		width: 100%;
+	}
+	.tutti-guide-card-btn-a {
+		width: 100%;
+	}
+	.tutti-top .middlecontent .dropdown {
+		background: #fff;
+	}
+	.tutti-bn2 {
+		margin: 100px 0;
+	}
+	.tutti-hot-card-above-sale {
+		top: -15%;
+    left: -10%;
+	}
+	footer .fifline {
+    height: 150px;
+	}
+	footer .tutti-footer-socials a {
+    margin-right: 25px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.small svg {
+    margin-right: 50px;
+	}
+	.tutti-questions-card {
+    padding: 25px 25px;
+	}
+	.tutti-testimonials-card-svg svg {
+		width: 20px;
+		height: 10px;
+	}
+	.tutti-testimonials-card p {
+		padding: 0 10px;
+	}
+	footer .tutti-footer-send .search-button {
+		padding: 0px 30px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	footer .tutti-footer-send .search-button {
+		padding: 0px 25px;
+    transform: translateX(-20%);
+	}
+}
+
+@media only screen and (min-width: 2000px) {
+	.tutti-top .middlecontent {
+    text-align: center;
+    margin-top: 600px;
+	}
+}
 
 //Medium: ≥768px
 @include media-breakpoint-down(md) {
