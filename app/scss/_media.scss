@@ -21,9 +21,6 @@
 	.tutti .tutu { 
 		left: 78px;
 	}
-	.tutti .menu .menu-mid {
-		
-	}
 	.tutti .menu {
 		padding: 15px 25px 0;	
 	}
@@ -230,6 +227,80 @@
     min-height: auto;
 		padding: 50px 50px;
 	}
+	.box2, .box3 {
+		display: none;
+	}
+	.tutti-breadcrumbs-row {
+		font-size: 24px;
+	}
+	.basket .tutti-testimonials-card {
+		margin-bottom: 80px;
+	}
+	.simpages-basket .box {
+		width: 75px;
+    height: 80px;
+	}
+	.simpages-basket .start-ci .dot {
+		width: 20px;
+    height: 20px;
+	}
+	.simpages-basket .text1 {
+		margin-top: 40px;
+		margin-left: -25px;
+	}
+	.simpages-basket .box4 {
+		width: 75px;
+		height: 80px;
+		margin-left: -30px;
+    margin-top: -55px;
+	}
+	.simpages-basket .box4 .dot {
+		width: 20px;
+    height: 20px;
+	}
+	.simpages-basket .text2 {
+		margin-right: -19px; 
+	}
+	.simpages-basket .text3 {
+		margin-right: -25px;
+	}
+	.basket .simpages .summary {
+		width: 75%;
+	}
+	.simpages {
+    padding: 0 0 75px 0;
+    margin-top: 75px;
+	}
+	.simpages-td img:last-child,
+	.simpages-img img:last-child
+	{
+		margin-bottom: 30px;
+	}
+	.tutti-filters-form-data {
+		width: 100%;
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+	.tutti-filters-form input {
+		width: 95%;
+	}
+	.tutti-filters-form-category {
+		border: 1px solid #d4d4d4;
+		width: 100%;
+    margin-left: 0;
+		margin-right: 0;
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+	.tutti-filters-form-price {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    border-radius: 10px;
+	}
+	.tutti-filters-form .tutti-btn {
+    width: 100%;
+	}
 }
 
 @media only screen and (height: 1024px) {
@@ -385,7 +456,7 @@
     margin-bottom: 20px;
 	}
 	.tutti-top .middlecontent .dropdown-menu, .tutti-top .middlecontent .search {
-		width: 100%;
+		width: 99%;
 	}
 	.tutti-top .middlecontent {
     text-align: center;
@@ -498,7 +569,7 @@
     text-align: center;
 	}
 	footer .tutti-footer-send .search {
-		width: 100%;
+		width: 99%;
 	}
 	.tutti-guide-card-btn-a {
 		width: 100%;
@@ -519,6 +590,174 @@
 	footer .tutti-footer-socials a {
     margin-right: 25px;
 	}
+	.basket .simpages .summary {
+		width: 90%;
+	}
+	.line-cost {
+		flex-direction: column;
+	}
+	.basket .simpages .summary .line-cost {
+		margin-bottom: 40px;
+	}
+	.basket .simpages .summary .line-cost:nth-child(3) {
+		margin-bottom: 20px;
+	}
+	.basket .simpages .summary .left {
+		margin-bottom: 15px;
+	}
+	.basket .simpages .summary .line-cost {
+		align-items: flex-start;
+	}
+	.pb-4 {
+		padding-bottom: 2.5rem!important;
+	}
+	.basket .tutti-account .un-account {
+		bottom: 38px;
+	}
+	.basket .simpages .summary .right .select-wrapper {
+		margin-left: 50px;
+	}
+	.basket .simpages .summary .right .select-wrapper,
+	.basket .simpages .summary .right .select-wrapper select
+	{
+		width: 150px;
+	}
+	.basket .but-send .tutti-hot-btn-a {
+		width: 100%;
+	}
+	.tutti-simple-card {
+		height: auto;
+	}
+	.tutti-simple-card-above,
+	.tutti-simple-card-above img
+	{
+		height: 280px;
+	}
+	.simpages .pagination-guide {
+		display: flex;
+    flex-direction: column;
+	}
+	.simpages .pagination-guide a {
+		width: 100%;
+	}
+	.simpages ul li:first-child a {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.simpages ul li:last-child a {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.simpages ul {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	}
+	.simpages ul li {
+		border-right: 0;
+		border-bottom: 1px solid rgba(212,208,208,.5);
+	}
+	.simpages ul li:last-child {
+		border-bottom: 0;
+	}
+	.simpages-book {
+		padding: 0;
+		box-shadow: none;
+		background-color: transparent;
+		flex-direction: column!important;
+		align-items: center;
+	}
+	.simpages-details-svg {
+    margin-right: 25px;
+	}
+	.simpages-details-svg:last-child {
+    margin-right: 0;
+	}
+	.simpages-book-btn a {
+		width: 100%;
+	}
+	.simpages-book .trma .price-be {
+		text-align: center;
+	}
+	.simpages-book .trma .price-af {
+		margin-bottom: 25px;
+	}
+	.simpages-details {
+		margin-bottom: 25px;
+    align-items: flex-start!important;
+		flex-direction: column!important;
+	}
+	.simpages-details-svg {
+		margin-right: 0;
+    margin-bottom: 15px;
+	}
+	.tutti .tittle-h2 {
+		line-height: 1.2;
+		text-align: center;
+	}
+	.simpages-book .trma {
+		width: 100%;
+		text-align: center;
+	}
+	.tutti-testimonials-card .wrap {
+		flex-direction: column!important;
+		align-items: center!important;
+		margin-top: 30px;
+	}
+	.basket .tutti-testimonials-card img {
+		width: 100%;
+	}
+	.basket .tutti-testimonials-card .wrap div {
+		margin-left: 0;
+	}
+	.transfers .destination form {
+		margin-top: 70px;
+    width: 100%;
+	}
+	.transfers .destination form input {
+		width: 100%;
+	}
+	.row_fromto {
+		flex-direction: column;
+	}
+	.row_fromto .block_fromto {
+		width: 100%;
+	}
+	.row_fromto .fromto_s3 {
+		width: 100%;
+		border: none;
+	}
+	.row_fromto .fromto_s3 .wrap_s3 .cost {
+		line-height: 1;
+	}
+	.row_fromto .fromto_s3 .wrap_s3 {
+		margin: 0;
+		margin-left: auto;
+	}
+	.row_fromto .fromto_s1 {
+		border-radius: 10px 10px 0 0;
+	}
+	.row_fromto .fromto_s2 {
+		border-radius: 0 0 10px 10px;
+		margin-left: 0;
+		border-top: 0;
+	}
+	.tutti-filters-form-submit-btn a {
+		width: 100%;
+	}
+	.pageerr h1 {
+		font-size: 140px!important;
+    line-height: 1;
+	}
+	.errcontent {
+    text-align: center;
+    margin-top: 150px!important;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -537,6 +776,29 @@
 	}
 	footer .tutti-footer-send .search-button {
 		padding: 0px 30px;
+	}
+	.basket .simpages .summary .right .select-wrapper,
+	.basket .simpages .summary .right .select-wrapper select
+	{
+		width: 125px;
+	}
+	.transfers .tutti-hot-btn {
+		margin: 50px 0 100px 0;
+	}
+	.fromto_s1,
+	.fromto_s2
+	{
+		display: flex;
+    flex-direction: column;
+	}
+	.row_fromto .block_fromto .right {
+		margin-top: 20px;
+	}
+	.row_fromto .block_fromto svg {
+		margin: 0;
+	}
+	.but_trip a.tutti-hot-btn-a {
+		width: 100%;
 	}
 }
 

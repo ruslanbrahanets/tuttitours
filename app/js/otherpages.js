@@ -14,6 +14,7 @@ $(function() {
 		ScrollerDetect();
 	}
 
+
 	$("#lang").click(function() {
 		if(objLANG.parent().children(".dropdown").is(":hidden"))
 		{
@@ -126,6 +127,20 @@ $(function() {
 	});
 	$('.justlogin').click(function() {
 		$('#modal').iziModal('open');
+	});
+
+	$("#booktrip").iziModal({
+    overlayClose: false,
+    transitionIn: "fadeIn",
+    openFullscreen: false,
+    fullscreen: true,
+    headerColor: "#00BAF0",
+    background: "#fff",
+    transitionInOverlay: "fadeIn",
+    bodyOverflow: false
+	});
+	$('.booknow').click(function() {
+		$('#booktrip').iziModal('open');
 	});
 
 });

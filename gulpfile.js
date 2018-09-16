@@ -50,6 +50,16 @@ gulp.task('js', function() {
 	.pipe(browsersync.reload({ stream: true }))
 });
 
+gulp.task('jsfancy', function() {
+	return gulp.src([
+		'app/libs/fancybox/jquery.fancybox.js' // Always at the end
+		])
+	.pipe(concat('jquery.fancybox.min.js'))
+	.pipe(uglify()) // Mifify js (opt.)
+	.pipe(gulp.dest('app/js'))
+	.pipe(browsersync.reload({ stream: true }))
+});
+
 gulp.task('jsfilter', function() {
 	return gulp.src([
 		'app/libs/jquery-asRange/dist/jquery-asRange.min.js' // Always at the end
@@ -120,7 +130,7 @@ gulp.task('rsync', function() {
 	}))
 });
 
-gulp.task('watch', ['styles', 'js', 'jsfilter', 'jspages', 'izimodal', 'izitoast', 'browser-sync'], function() {
+gulp.task('watch', ['styles', 'js', 'jsfilter', 'jsfancy', 'jspages', 'izimodal', 'izitoast', 'browser-sync'], function() {
 	gulp.watch('app/scss/**/*.scss', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browsersync.reload)
@@ -139,7 +149,7 @@ gulp.task('image', function() {
 	.pipe(gulp.dest('dist/img/full')); 
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'image', 'styles', 'js', 'IE', 'jsfilter', 'jspages', 'jspages', 'izitoast', 'izimodal'], function() {
+gulp.task('build', ['removedist', 'imagemin', 'image', 'styles', 'js', 'IE', 'jsfilter', 'jspages', 'jspages', 'jsfancy', 'izitoast', 'izimodal'], function() {
 
 	var buildFiles = gulp.src([
 		'app/*.html',
@@ -184,6 +194,10 @@ gulp.task('build', ['removedist', 'imagemin', 'image', 'styles', 'js', 'IE', 'js
 
 	var buildJs = gulp.src([
 		'app/js/izimodal.min.js',
+		]).pipe(gulp.dest('dist/js'));
+
+	var buildJs = gulp.src([
+		'app/js/jquery.fancybox.min.js',
 		]).pipe(gulp.dest('dist/js'));
 
 	var buildFonts = gulp.src([

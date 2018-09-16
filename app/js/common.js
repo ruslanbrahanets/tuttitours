@@ -23,6 +23,7 @@ $(function() {
 
 	function heightDetect() {
 		$(".tutti-top").css("height", $(window).height());
+		$("#menu").css("height", $(window).height());
 	}
 
 	heightDetect();
